@@ -1,6 +1,6 @@
 # Capstone Project: Food-finder
 
-Hello, this is the repository for my Capstone project I worked on as a fellow at The Data Incubator[Paste link here!]
+Hello, this is the repository for my Capstone project I worked on as a fellow at [The Data Incubator](https://www.thedataincubator.com/)
 
 
 
@@ -21,7 +21,7 @@ Having gone through this trouble with my roommates about a million times, I deci
 ### Key assumptions and details:
 1. User(s) is(are) new to the platform.
 2. They can select the cuisine from a wide variety of options available.
-3. To build the system, data is taken from the Yelp dataset[link here!]
+3. To build the system, data is taken from the [Yelp dataset](https://www.yelp.com/dataset)
 4. Restaurants are selected from the Greater Cleveland area.
 5. More cities could be added in the future to get the top recommendations in any of the major cities all over the US. 
 
@@ -46,7 +46,7 @@ The data is in the form of user reviews which is essentially, *text data*. In or
 ### Overview:
 In a nutshell, the key steps in building the project are:
 * Each restaurant is provided with its **categories**. First step is to vectorize the categories column and build a vector for each restaurant in the n-dimensional category space where n is the number of unique categories.
-* **Methods:** Using advanced NLP toolkits like NLTK and spaCy[link for both!], the reviews data is analyzed and each review is given a user sentiment analyzed polarity score(VADER).
+* **Methods:** Using advanced NLP toolkits like [NLTK](https://www.nltk.org/) and [spaCy](https://spacy.io/), the reviews data is analyzed and each review is given a user sentiment analyzed polarity score(VADER).
 * Based off the polarity scores for each cuisine category grouped by restaurants, a mean polarity score is generated.
 * The restaurants are then ranked based off these polarity ratings.
 * These **popular** restaurants are then suggested to the user(s) along with their geographical locations for them to make an informed choice.
