@@ -55,7 +55,7 @@ def get_popular_restaurants(df,categories_list):
 @app.route("/")
 def index():
     start_coords = (41.499300, -81.694400)
-    folium_map = folium.Map(location=start_coords,width=1200,height=800,tiles="OpenStreetMap", zoom_start=11)
+    folium_map = folium.Map(location=start_coords,width=1500,height=800,tiles="OpenStreetMap", zoom_start=11)
     folium_map.save('templates/map.html')
     return render_template('index.html') 
 
@@ -73,17 +73,30 @@ def predict():
     except ValueError:
         return "Fill out the values!"
 
+    lst_store = []
+    preference1 = [preference1]
+    preference2 = [preference2]
 
-    preferences_list = [preference1,preference2]
-    restaurants = get_popular_restaurants(imp_ohio_reviews,preferences_list)
+    # preferences_list = [preference1,preference2]
+    # restaurants = get_popular_restaurants(imp_ohio_reviews,preferences_list)
     
+    rest_pref1 = get_popular_restaurants(imp_ohio_reviews,preference1)
+    rest_pref2 = get_popular_restaurants(imp_ohio_reviews,preference2)
+    lst_prefer = [rest_pref1,rest_pref2]
+
+    # For top 15 from either category, 30 in total
+    if preference1 != preference2:
+        for i in range(2):
+            lst_store.extend(lst_prefer[i][:15])
+    else:
+        lst_store.extend(lst_prefer[0][:30])
     
     start_coords = (41.499300, -81.694400)
-    folium_map = folium.Map(location=start_coords,width=1200,height=800,tiles="OpenStreetMap", zoom_start=11)
+    folium_map = folium.Map(location=start_coords,width=1500,height=800,tiles="OpenStreetMap", zoom_start=11)
     folium_map.save('templates/.html')
-    for restaurant in restaurants[:20]:
+    for restaurant in lst_store:
         coordinates = restaurant['Latitude'],restaurant['Longitude']
-        folium.Marker(coordinates,popup=(restaurant['Name'],restaurant['Category'])).add_to(folium_map)
+        folium.Marker(coordinates,popup=(restaurant['Name'],restaurant['Zip Code'],restaurant['Category'])).add_to(folium_map)
     folium_map.save('templates/rest.html') 
     return render_template('predict.html') 
 
