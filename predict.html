@@ -1,0 +1,136 @@
+<!-- <!DOCTYPE html>
+<html>
+    <title> Foodies</title>
+<body>
+
+<h1>Welcome to Foodies!  Restaurant finder for you and friends!</h1>
+<center><img src ="{{user_image}}" ></center>
+<h2>Please fill out your preferences: Click the "Submit" button and your recommendations will be out soon!</h2>
+
+<form action="/action_page.php">
+  <label for="food">Pick your favorite food category:</label>
+  <select name="food" id="food">
+    <option value="indian">Steak </option>
+    <option value="japanese">Japanese </option>
+    <option value="sea">Seafood </option>
+    <option value="mexican">Mexican</option>
+    <option value="american">American</option>
+    <option value="italian">Italian</option>
+    <option value="chinese">Chinese</option>
+    <option value="middle-eastern">Middle eastern</option>
+    <option value="steak">Steak</option>
+    <option value="steak">Other</option>
+  </select>
+  <br><br>
+  
+</form>
+
+
+
+
+<form action="/action_page.php">
+    <label for="food">Pick your favorite food category:</label>
+    <select name="food" id="food">
+    <option value="mexican">Tacos</option>
+    <option value="japanese">Japanese </option>
+    <option value="sea">Seafood </option>
+      <option value="indian">Indian </option>  
+      <option value="american">American</option>
+      <option value="italian">Italian</option>
+      <option value="chinese">Chinese</option>
+      <option value="middle-eastern">Middle eastern</option>
+      <option value="steak">Steak</option>
+      <option value="steak">Other</option>
+    </select>
+    <br><br>
+      
+  </form>
+
+
+  <form action="/action_page.php">
+    <label for="fname">Your location (Zip code):</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Radius:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+  </form>
+
+  <h3>
+    Please indicate special requests(if any):
+  </h3>
+  <form action="/action_page.php">
+    <label for="fname">Allergies: </label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="fname">Constraints: </label>
+    <input type="text" id="fname" name="fname"><br><br>
+   
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html> -->
+
+<h1>Welcome to Foodies!  Restaurant finder for you and friends!</h1>
+<form action="predict" method="POST">
+  
+    <p><label for="User1">User1</label>
+         <select id="User1" name="User1">
+           <option value="Indian">Indian</option>
+           <option value="Chinese">Chinese</option>
+           <option value="Nightlife">Nightlife</option>                      
+           <option value="Bars">Bars</option>
+           <option value="American (Traditional)">American (Traditional)</option>
+           <option value="American (New)">American (New)</option>
+           <option value="Italian">Italian</option>
+           <option value="Japanese">Japanese</option>
+           <option value="Seafood">Seafood</option>
+           <option value="Mexican">Mexican</option>
+           <option value="Fast Food">Fast Food</option>
+           <option value="Gluten-Free">Gluten-Free</option>
+           <option value="Vegan">Vegan</option>
+           <option value="Thai">Thai</option>
+           <option value="Vegetarian">Vegetarian</option>
+           <option value="Wine & Spirits">Wine & Spirits</option>
+           <option value="Breakfast & Brunch">Breakfast & Brunch</option>
+           <option value="Steakhouses">Steakhouses</option>
+           <option value="Mediterranean">Mediterranean</option>
+           <option value="Latin American">Latin American</option>
+           <option value="Middle Eastern">Middle Eastern</option>
+           <option value="Buffets">Buffets</option>
+           <option value="Barbeque">Barbeque</option>
+           
+       </select>
+       
+  
+    <p><label for="User2">User2</label>
+      <select id="User2" name="User2">
+           <option value="Chinese">Chinese</option>
+           <option value="Indian">Indian</option>           
+           <option value="Bars">Bars</option>
+           <option value="American (Traditional)">American (Traditional)</option>
+           <option value="American (New)">American (New)</option>
+           <option value="Italian">Italian</option>
+           <option value="Japanese">Japanese</option>
+           <option value="Seafood">Seafood</option>
+           <option value="Mexican">Mexican</option>
+           <option value="Fast Food">Fast Food</option>
+           <option value="Nightlife">Nightlife</option>
+           <option value="Gluten-Free">Gluten-Free</option>
+           <option value="Vegan">Vegan</option>
+           <option value="Thai">Thai</option>
+           <option value="Vegetarian">Vegetarian</option>
+           <option value="Wine & Spirits">Wine & Spirits</option>
+           <option value="Breakfast & Brunch">Breakfast & Brunch</option>
+           <option value="Steakhouses">Steakhouses</option>
+           <option value="Mediterranean">Mediterranean</option>
+           <option value="Latin American">Latin American</option>
+           <option value="Middle Eastern">Middle Eastern</option>
+           <option value="Buffets">Buffets</option>
+           <option value="Barbeque">Barbeque</option>
+        
+    </select>
+     
+  <br>
+  
+  <p><input type="reset"><input type="submit"></p>
+  </form>
+  
+  {% include "rest.html" %}
