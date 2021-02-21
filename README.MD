@@ -5,27 +5,26 @@ Hello, this is the repository for my Capstone project that I worked on as a fell
 
 
 ### Objective:
-* To build a knowledge-based recommendation interface for a group of two people.
-* To build a hybrid recommendation interface for existing single-user accounts.
-* Address a **cold-start** problem in the form of a **popularity-based** engine.
+* To build an interface for single and multi-user recommendation engine.
+* **Single-user:** Hybrid recommendation interface.
+* **Multi-user:** Knowledge-based recommendation interface for a group of two people.
+* Address **cold-start** problem.
 
 
 ### Project genesis:
 How often does it happen with you that you've got friends over and you all take forever to decide which place to go to? What are the plausible factors that prevent us from reaching a consensus? There could be several reasons: 
 1. Every person has a **unique** taste.
-2. People like specific things like **proximity**, **ambiance** and so on..
-3. People have a craving for a certain food like **Chicken tikka** or a **steak**.
+2. People may have constraints like **proximity**, or a craving for a certain food like **Chicken tikka** or a **steak**.
+ 
 
-#### Solution:
-Having gone through this trouble with my roommates about a million times, here is a solution in the form of **Food-finder**. 
 
 #### Beneficiary: Who is it for?
 This product is a useful tool for pretty much every single person who likes to go out to eat either by himself/herself or in a group.
 You could be in a new city or in your own neighborhood and it will recommend restaurants to you based off the reviews left by thousands of users.
 
-### Key assumptions and details:
-1. They can select the cuisine from a wide variety of options available.
-2. To build the system, data is taken from the [Yelp dataset](https://www.yelp.com/dataset)
+### Key details:
+
+1. To build the system, the data is taken from the [Yelp dataset](https://www.yelp.com/dataset).
 3. Restaurants are selected from the city of Las Vegas.
 4. More cities could be added in the future to get the top recommendations in any of the major cities all over the US. 
 
@@ -46,25 +45,22 @@ You could be in a new city or in your own neighborhood and it will recommend res
 
 
 
-
-
-
-
-
-
-**Data cleaning:**
-
-The data is in the form of user reviews which is essentially, *text data*. In order to extract key information out of it, the data is cleaned off all the punctuation marks, stop words and other non-text characters to be fed to the natural language processing(NLP) methods.
-
 ### Under the hood:
-The key steps behind the project are:
-* Each restaurant is provided with its **categories**. First step is to vectorize the categories column and build a vector for each restaurant in the n-dimensional category space where n is the number of unique categories.
-* **Methods:** Using advanced NLP toolkits like [NLTK](https://www.nltk.org/) and [spaCy](https://spacy.io/), the reviews data is analyzed and each review is given a user sentiment analyzed polarity score(VADER).
-* Based off the polarity scores for each cuisine category grouped by restaurants, a mean polarity score is generated.
-* The restaurants are then ranked based off these polarity ratings.
+**Knowledge-based system:**
+* Each restaurant is provided with its **categories**. These categories are typically represent the cuisines they serve.
+* **Text Reviews Analysis:** Using the unsupervised learning method of **Topic Modeling** and the natural language processing tools, a new set of **miscellaneous** categories, *e.g.* ambiance, dinner/breakfast choice is created. 
+* The cleaning, processing of the reviews is done using [spaCy](https://spacy.io/) and for topic modeling, [Gensim](https://pypi.org/project/gensim/) is used.
+* Together, these form a feature-set which, the users can choose to look for the ideal place. 
+* The restaurant ratings are weighted-averaged and sorted in order to produce a list of **popular** restaurants.
 * These **popular** restaurants are then suggested to the user(s) along with their geographical locations for them to make an informed choice.
-* **Note:** This is a *cold-start* problem. The users are asked details about their preferences which helps the popularity-based engine recommend the best possible options in the neighborhood. 
+* **Note:** This is a *cold-start* problem. The users are asked details about their preferences which helps the knowledge-based engine recommend the best possible options in the neighborhood. 
 
+**Hybrid system:**
+* This system is composed of two engines working in parallel: **Collaborative-based** and **Content-based**.
+* **Collaborative-based:** The model-based collaborative filtering method is used to predict the rating a user would give to a restaurant he/she has never visited. Collaborative-filtering method looks for the set of people whose ratings are similar to the user and suggests the restaurants which those people have liked. Based on the predicted ratings, the top choices are recommended. The engine is built using [Scikit-Learn](http://surpriselib.com/).
+* It uses matrix factorization method, in particular, Singular Value ecomposition(SVD) to perform the predictions.
+* **Content-based:** Unlike collaborative filtering, a content-based method looks for the places a user has liked in the past and suggests similar places. 
+* In order to find the restaurants suggestions, the same feature-set is used for finding the cosine-similarities between the restaurants and the ones with the highest similarities are suggested. 
 
 
 
