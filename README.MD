@@ -5,15 +5,16 @@ Hello, this is the repository for my Capstone project that I worked on as a fell
 
 
 ### Objective:
-* To build a **recommender system** for a group of users and help them find a restaurant.
+* To build a knowledge-based recommendation interface for a group of two people.
+* To build a hybrid recommendation interface for existing single-user accounts.
 * Address a **cold-start** problem in the form of a **popularity-based** engine.
 
 
 ### Project genesis:
 How often does it happen with you that you've got friends over and you all take forever to decide which place to go to? What are the plausible factors that prevent us from reaching a consensus? There could be several reasons: 
 1. Every person has a **unique** taste.
-2. People have constraints like **allergies**, **proximity** and so on..
-3. People have a craving for a certain food like **Chicken tikka** or **steak**
+2. People like specific things like **proximity**, **ambiance** and so on..
+3. People have a craving for a certain food like **Chicken tikka** or a **steak**.
 
 #### Solution:
 Having gone through this trouble with my roommates about a million times, here is a solution in the form of **Food-finder**. 
@@ -23,11 +24,10 @@ This product is a useful tool for pretty much every single person who likes to g
 You could be in a new city or in your own neighborhood and it will recommend restaurants to you based off the reviews left by thousands of users.
 
 ### Key assumptions and details:
-1. User(s) is(are) new to the platform.
-2. They can select the cuisine from a wide variety of options available.
-3. To build the system, data is taken from the [Yelp dataset](https://www.yelp.com/dataset)
-4. Restaurants are selected from the Greater Cleveland area.
-5. More cities could be added in the future to get the top recommendations in any of the major cities all over the US. 
+1. They can select the cuisine from a wide variety of options available.
+2. To build the system, data is taken from the [Yelp dataset](https://www.yelp.com/dataset)
+3. Restaurants are selected from the city of Las Vegas.
+4. More cities could be added in the future to get the top recommendations in any of the major cities all over the US. 
 
 
 ## Project details:
@@ -42,7 +42,15 @@ You could be in a new city or in your own neighborhood and it will recommend res
 1. Businesses related to the key category **Restaurants** are selected.
 2. Most users either don't post too many reviews: one or two or none at all.
 3. Yelp calls the users who frequently post reviews an **elite** user.
-4. For our analysis, I have filtered either all the elite users who have been 'yelping' for a while or the ones who are not elite but fall in the top 25 percentile range.
+4. For our analysis, I have filtered either all the elite users who have been 'yelping' for a while or the ones who are not elite but fall in the top 25 percentile range or the users who have left at least 10 reviews.
+
+
+
+
+
+
+
+
 
 **Data cleaning:**
 
