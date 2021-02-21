@@ -57,7 +57,7 @@ You could be in a new city or in your own neighborhood and it will recommend res
 
 **Hybrid system:**
 * This system is composed of two engines working in parallel: **Collaborative-based** and **Content-based**.
-* **Collaborative-based:** The model-based collaborative filtering method is used to predict the rating a user would give to a restaurant he/she has never visited. Collaborative-filtering method looks for the set of people whose ratings are similar to the user and suggests the restaurants which those people have liked. Based on the predicted ratings, the top choices are recommended. The engine is built using [Scikit-Learn](http://surpriselib.com/).
+* **Collaborative-based:** The model-based collaborative filtering method is used to predict the rating a user would give to a restaurant he/she has never visited. Collaborative-filtering method looks for the set of people whose ratings are similar to the user and suggests the restaurants which those people have liked. Based on the predicted ratings, the top choices are recommended. The engine is built using [Scikit-Surprise](http://surpriselib.com/).
 * It uses matrix factorization method, in particular, Singular Value ecomposition(SVD) to perform the predictions.
 * **Content-based:** Unlike collaborative filtering, a content-based method looks for the places a user has liked in the past and suggests similar places. 
 * In order to find the restaurants suggestions, the same feature-set is used for finding the cosine-similarities between the restaurants and the ones with the highest similarities are suggested. 
