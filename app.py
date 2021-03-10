@@ -227,7 +227,19 @@ def group():
 
         for restaurant in store_rest:
             coordinates = restaurant['Latitude'],restaurant['Longitude']
-            folium.Marker(coordinates,popup=(restaurant['Name'],restaurant['Category'],restaurant['Topics'],restaurant['Stars'])).add_to(folium_map)  
+            coordinates = restaurant['Latitude'],restaurant['Longitude']
+            html = f'''<strong>Name:</strong> {restaurant['Name']}<br>
+            <strong>Categories:</strong> {restaurant['Category']}<br>
+            <strong>Amenities:</strong> {restaurant['Topics']}<br>
+            <strong>Rating:</strong> {restaurant['Stars']}
+            '''
+
+            iframe = folium.IFrame(html,
+                                width=200,
+                                height=200)
+            popup = folium.Popup(iframe,
+                                max_width=200)
+            folium.Marker(coordinates,popup=popup).add_to(folium_map)  
         data = [(restaurant['Latitude'],restaurant['Longitude']) for restaurant in store_rest]
         HeatMap(data).add_to(folium.FeatureGroup(name='Heat Map').add_to(folium_map))
 
@@ -257,7 +269,19 @@ def personalized():
 
         for restaurant in store_rest:
             coordinates = restaurant['Latitude'],restaurant['Longitude']
-            folium.Marker(coordinates,popup=(restaurant['Name'],restaurant['Category'],restaurant['Topics'],restaurant['Stars'])).add_to(folium_map)  
+            coordinates = restaurant['Latitude'],restaurant['Longitude']
+            html = f'''<strong>Name:</strong> {restaurant['Name']}<br>
+            <strong>Categories:</strong> {restaurant['Category']}<br>
+            <strong>Amenities:</strong> {restaurant['Topics']}<br>
+            <strong>Rating:</strong> {restaurant['Stars']}
+            '''
+
+            iframe = folium.IFrame(html,
+                                width=200,
+                                height=200)
+            popup = folium.Popup(iframe,
+                                max_width=200)
+            folium.Marker(coordinates,popup=popup).add_to(folium_map)  
         data = [(restaurant['Latitude'],restaurant['Longitude']) for restaurant in store_rest]
         HeatMap(data).add_to(folium.FeatureGroup(name='Heat Map').add_to(folium_map))
 
@@ -279,4 +303,4 @@ def results_personalized():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True,port=4000)
