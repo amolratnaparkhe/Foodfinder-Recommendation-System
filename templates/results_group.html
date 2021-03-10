@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="container">
+
+        
+                <p class="text-left">Here are your recommendations.</p>
+            
+            <a href="{{ url_for('group')}}" class="btn btn-secondary">Back</a>
+            <br>
+            
+
+
+        
+    {% include "map_group.html" %}
+    
+<br>
+
+<hr class="my-4">
+
+</div>
+
+
+{% endblock %}
+

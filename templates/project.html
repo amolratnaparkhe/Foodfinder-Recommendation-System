@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+
+    <h3 id="capstone-project-food-finder">Capstone Project: Food-finder</h3>
+<p>I built the <strong> Food-Finder app</strong> as a fellow at <a href="https://www.thedataincubator.com/">The Data Incubator</a>.</p>
+<h5 id="objective-">Objective:</h5>
+<ul>
+<li>To build an interface for single and multi-user recommendation engine.</li>
+<li><strong>Single-user:</strong> Hybrid recommendation interface.</li>
+<li><strong>Multi-user:</strong> Knowledge-based recommendation interface for a group of two people.</li>
+<li>Address <strong>cold-start</strong> problem.</li>
+</ul>
+<h5 id="project-genesis-">Project genesis:</h5>
+<p>How often does it happen with you that you&#39;ve got friends over and you all take forever to decide which place to go to? What are the plausible factors that prevent us from reaching a consensus? There could be several reasons: </p>
+<ol>
+<li>Every person has a <strong>unique</strong> taste.</li>
+<li>People may have constraints like <strong>proximity</strong>, or a craving for a certain food like <strong>Chicken tikka</strong> or a <strong>steak</strong>.</li>
+</ol>
+<h5 id="beneficiary-who-is-it-for-">Beneficiary: Who is it for?</h5>
+<p>This product is a useful tool for pretty much every single person who likes to go out to eat either by himself/herself or in a group.
+You could be in a new city or in your own neighborhood and it will recommend restaurants to you based off the reviews left by thousands of users.</p>
+
+<ol>
+<li>To build the system, the data is taken from the <a href="https://www.yelp.com/dataset">Yelp dataset</a>.</li>
+<li>Restaurants are selected from the city of Las Vegas.</li>
+<li>More cities could be added in the future to get the top recommendations in any of the major cities all over the US. </li>
+</ol>
+<hr class="my-4">
+<h3 id="project-details-">Project details:</h3>
+<!--
+<h5 id="data-retreival-filtering-and-cleaning-">Data: Retreival, Filtering and Cleaning:</h5>
+-->
+<h5 id="Data Retrieval:">Data Retrieval:</h5>
+
+<ol>
+<li>Yelp dataset is a huge collection of user reviews in the form of <em>reviews.json</em>.</li>
+<li>In addition to the user reviews, it contains two more datasets: <em>users.json</em> and <em>business.json</em>.</li>
+</ol>
+<h5 id="Data filtering:">Data filtering:</h5>
+
+<ol>
+<li>Businesses related to the key category <strong>Restaurants</strong> are selected.</li>
+<li>Most users either don&#39;t post too many reviews: one or two or none at all.</li>
+<li>Yelp calls the users who frequently post reviews an <strong>elite</strong> user.</li>
+<li>For our analysis, I have filtered either all the elite users who have been &#39;yelping&#39; for a while or the ones who are not elite but fall in the top 25 percentile range or the users who have left at least 10 reviews.</li>
+</ol>
+<hr class="my-4">
+<h3 id="under-the-hood-">Under the hood:</h3>
+<h5 id="Knowledge-based system:">Knowledge-based system:</h5>
+
+<ul>
+<li>Each restaurant is provided with its <strong>categories</strong>. These categories are typically represent the cuisines they serve.</li>
+<li><strong>Text Reviews Analysis:</strong> Using the unsupervised learning method of <strong>Topic Modeling</strong> and the natural language processing tools, a new set of <strong>miscellaneous</strong> categories, <em>e.g.</em> ambiance, dinner/breakfast choice is created. </li>
+<li>The cleaning, processing of the reviews is done using <a href="https://spacy.io/">spaCy</a> and for topic modeling, <a href="https://pypi.org/project/gensim/">Gensim</a> is used.</li>
+<li>Together, these form a feature-set which, the users can choose to look for the ideal place. </li>
+<li>The restaurant ratings are weighted-averaged and sorted in order to produce a list of <strong>popular</strong> restaurants.</li>
+<li>These <strong>popular</strong> restaurants are then suggested to the user(s) along with their geographical locations for them to make an informed choice.</li>
+<li><strong>Note:</strong> This is a <em>cold-start</em> problem. The users are asked details about their preferences which helps the knowledge-based engine recommend the best possible options in the neighborhood. </li>
+</ul>
+<h5 id="Hybrid system:">Hybrid system:</h5>
+
+<ul>
+<li>This system is composed of two engines working in parallel: <strong>Collaborative-based</strong> and <strong>Content-based</strong>.</li>
+<li><strong>Collaborative-based:</strong> The model-based collaborative filtering method is used to predict the rating a user would give to a restaurant he/she has never visited. The Collaborative-filtering method looks for the set of people whose ratings are similar to the user and suggests the restaurants which those people have liked. Based on the predicted ratings, the top choices are recommended. The engine is built using <a href="http://surpriselib.com/">Scikit-Surprise</a>.</li>
+<li>It uses the matrix factorization method, in particular, Singular Value Decomposition(SVD) to perform the predictions.</li>
+<li><strong>Content-based:</strong> Unlike collaborative filtering, a content-based method looks for the places a user has liked in the past and suggests similar places. </li>
+<li>In order to find the restaurants suggestions, the same feature-set is used for finding the cosine-similarities between the restaurants, and the ones with the highest similarities are suggested. </li>
+</ul>
+
+    <br>
+
+<hr class="my-4">
+</div>
+{% endblock %}

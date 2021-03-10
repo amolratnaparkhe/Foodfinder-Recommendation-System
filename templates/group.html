@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <p>Please fill-out your preferences, additional amenities, your current zip code, and 
+        the proximity from your location!</p>
+<form method="post">
+    {{ form.hidden_tag() }}
+    <div class="row">
+        <div class="col">
+    {{ form.preference1.label }}{{ form.preference1(class='custom-select') }}
+        </div>
+    <div class="col">
+    {{ form.preference2.label }}{{ form.preference2(class='custom-select') }}
+        </div> 
+    </div> 
+    <br>
+    <div class="row">
+        <div class="col">
+    {{ form.miscellaneous.label }}{{ form.miscellaneous(class='custom-select') }}
+        </div>
+    <div class="col">
+    {{ form.zip_code.label }}{{ form.zip_code(class='custom-select') }}
+        </div>
+        <div class="col">
+    {{ form.distance.label }}{{ form.distance(class='form-control',placeholder="Distance") }}
+        </div> 
+    </div> 
+    <br>
+    
+            <a href="{{ url_for('home')}}" class="btn btn-secondary">Back</a>
+        
+            {{form.submit(class='btn btn-secondary')}}
+        
+    
+    
+</form>
+<br>
+<hr class="my-4">
+
+</div>
+
+
+{% endblock %}

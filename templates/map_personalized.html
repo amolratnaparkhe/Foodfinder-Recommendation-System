@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_55db6656a03b476a87e5ba0a41444a1b {
+                    position: relative;
+                    width: 1200.0px;
+                    height: 600.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_55db6656a03b476a87e5ba0a41444a1b" ></div>
+        
+</body>
+<script>    
+    
+            var map_55db6656a03b476a87e5ba0a41444a1b = L.map(
+                "map_55db6656a03b476a87e5ba0a41444a1b",
+                {
+                    center: [36.1699, -115.1398],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8fbd8e6b6bdb4e19a37ce01e7e7b3a72 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_55db6656a03b476a87e5ba0a41444a1b);
+        
+    
+            var marker_497b89230eb84410932b1d181f5ff3f5 = L.marker(
+                [36.0426337, -115.2245316],
+                {}
+            ).addTo(map_55db6656a03b476a87e5ba0a41444a1b);
+        
+    
+        var popup_e264df0037c344139467216da44881f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0790b3c3f513445b9d36a269a8c699f2 = $(`<div id="html_0790b3c3f513445b9d36a269a8c699f2" style="width: 100.0%; height: 100.0%;">('Carnitas King', ['Mexican', 'Restaurants'], ['Snack / Tacos', 'Good Ambiance / Service', 'Continental'], 4.813559322033898)</div>`)[0];
+            popup_e264df0037c344139467216da44881f6.setContent(html_0790b3c3f513445b9d36a269a8c699f2);
+        
+
+        marker_497b89230eb84410932b1d181f5ff3f5.bindPopup(popup_e264df0037c344139467216da44881f6)
+        ;
+
+        
+    
+    
+            var marker_a9fdf88618ec4f52a5ac48fe4526fca3 = L.marker(
+                [36.1517421042, -115.1518118808],
+                {}
+            ).addTo(map_55db6656a03b476a87e5ba0a41444a1b);
+        
+    
+        var popup_e1145e97e989491392e6cdf51f0507f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29cbbbac38424deab3174c0b3185636d = $(`<div id="html_29cbbbac38424deab3174c0b3185636d" style="width: 100.0%; height: 100.0%;">('Bajamar Seafood & Tacos', ['Fast Food', 'Dive Bars', 'Bars', 'Tacos', 'Seafood', 'Nightlife', 'Mexican', 'Restaurants'], ['Snack / Tacos', 'Dinner', 'Fusion / Buffet'], 4.7995049504950495)</div>`)[0];
+            popup_e1145e97e989491392e6cdf51f0507f2.setContent(html_29cbbbac38424deab3174c0b3185636d);
+        
+
+        marker_a9fdf88618ec4f52a5ac48fe4526fca3.bindPopup(popup_e1145e97e989491392e6cdf51f0507f2)
+        ;
+
+        
+    
+    
+            var marker_e5225ec197194613844a4c9b6926d7dd = L.marker(
+                [36.1041615385, -115.1376310519],
+                {}
+            ).addTo(map_55db6656a03b476a87e5ba0a41444a1b);
+        
+    
+        var popup_57bd63d1b3d649dda48ec54d10091599 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f42ab6fb4e040ae86c2b82bcb18cd98 = $(`<div id="html_0f42ab6fb4e040ae86c2b82bcb18cd98" style="width: 100.0%; height: 100.0%;">('Poke Heaven', ['Korean', 'Poke', 'Food', 'Asian Fusion', 'Japanese', 'Restaurants', 'Hawaiian'], ['Exotic', 'Continental', 'Fusion / Buffet'], 4.791666666666667)</div>`)[0];
+            popup_57bd63d1b3d649dda48ec54d10091599.setContent(html_0f42ab6fb4e040ae86c2b82bcb18cd98);
+        
+
+        marker_e5225ec197194613844a4c9b6926d7dd.bindPopup(popup_57bd63d1b3d649dda48ec54d10091599)
+        ;
+
+        
+    
+    
+            var marker_e5eb5563bd924d01bc43c464ce9bfc1b = L.marker(
+                [36.1261962, -115.1917155],
+                {}
+            ).addTo(map_55db6656a03b476a87e5ba0a41444a1b);
+        
+    
+        var popup_080bafe0bb4f421b97a52968e8a196b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac579025bfaf4507abecf716d41c517a = $(`<div id="html_ac579025bfaf4507abecf716d41c517a" style="width: 100.0%; height: 100.0%;">('J Karaoke Bar', ['Nightlife', 'Bars', 'Restaurants', 'Asian Fusion', 'Cocktail Bars', 'Karaoke', 'American (New)', 'Korean'], ['Hotel/ Bar/ Night life', 'Exotic', 'Continental'], 4.772241992882562)</div>`)[0];
+            popup_080bafe0bb4f421b97a52968e8a196b1.setContent(html_ac579025bfaf4507abecf716d41c517a);
+        
+
+        marker_e5eb5563bd924d01bc43c464ce9bfc1b.bindPopup(popup_080bafe0bb4f421b97a52968e8a196b1)
+        ;
+
+        
+    
+    
+            var marker_12f581d3fc4c41fab2625f8a18d4d528 = L.marker(
+                [36.117091, -115.138401],
+                {}
+            ).addTo(map_55db6656a03b476a87e5ba0a41444a1b);
+        
+    
+        var popup_5427b23b5e424ef4bff518da9af6b9bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_916f978e9b8646d9b3e78d769f464c47 = $(`<div id="html_916f978e9b8646d9b3e78d769f464c47" style="width: 100.0%; height: 100.0%;">('Karved', ['Restaurants', 'Sandwiches', 'Fast Food', 'Salad', 'American (New)', 'American (Traditional)', 'Barbeque'], ['Fastfood / American', 'Good Ambiance / Service', 'Continental'], 4.770833333333333)</div>`)[0];
+            popup_5427b23b5e424ef4bff518da9af6b9bb.setContent(html_916f978e9b8646d9b3e78d769f464c47);
+        
+
+        marker_12f581d3fc4c41fab2625f8a18d4d528.bindPopup(popup_5427b23b5e424ef4bff518da9af6b9bb)
+        ;
+
+        
+    
+    
+            var marker_9c8c8183afc14580917df8306fb5970a = L.marker(
+                [36.1017406138, -115.1003590417],
+                {}
+            ).addTo(map_55db6656a03b476a87e5ba0a41444a1b);
+        
+    
+        var popup_e223dd3f02de481cb53dd2c58f0ab7a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_10bd7e213b6f412cb27fae619a48a47b = $(`<div id="html_10bd7e213b6f412cb27fae619a48a47b" style="width: 100.0%; height: 100.0%;">("Zenaida's Cafe", ['Cafes', 'Breakfast & Brunch', 'Restaurants'], ['Continental', 'Snack / Tacos', 'Dinner'], 4.760964912280702)</div>`)[0];
+            popup_e223dd3f02de481cb53dd2c58f0ab7a4.setContent(html_10bd7e213b6f412cb27fae619a48a47b);
+        
+
+        marker_9c8c8183afc14580917df8306fb5970a.bindPopup(popup_e223dd3f02de481cb53dd2c58f0ab7a4)
+        ;
+
+        
+    
+    
+            var marker_a1c24e4af2ba4bcb999c72e8b2ca6c53 = L.marker(
+                [36.1265556, -115.1892231],
+                {}
+            ).addTo(map_55db6656a03b476a87e5ba0a41444a1b);
+        
+    
+        var popup_f4de30f8ff974d34bdad8660b65a0e96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_677b1e81562747be85fc42ceef713504 = $(`<div id="html_677b1e81562747be85fc42ceef713504" style="width: 100.0%; height: 100.0%;">('Kame Omakase and Kaiseki', ['Seafood', 'Japanese', 'Sushi Bars', 'Restaurants'], ['Dinner', 'Exotic', 'Fusion / Buffet'], 4.753846153846154)</div>`)[0];
+            popup_f4de30f8ff974d34bdad8660b65a0e96.setContent(html_677b1e81562747be85fc42ceef713504);
+        
+
+        marker_a1c24e4af2ba4bcb999c72e8b2ca6c53.bindPopup(popup_f4de30f8ff974d34bdad8660b65a0e96)
+        ;
+
+        
+    
+    
+            var marker_41558615b37a4beaaa7ee21ea3624e44 = L.marker(
+                [36.1154417, -115.1338935],
+                {}
+            ).addTo(map_55db6656a03b476a87e5ba0a41444a1b);
+        
+    
+        var popup_e6f63be2672f46beb57544e69110c492 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe3636fd67fe4fa2a687c65fe61637ac = $(`<div id="html_fe3636fd67fe4fa2a687c65fe61637ac" style="width: 100.0%; height: 100.0%;">('Arirang Korean BBQ', ['Barbeque', 'Korean', 'Restaurants'], ['Fusion / Buffet', 'Continental', 'Snack / Tacos'], 4.508875739644971)</div>`)[0];
+            popup_e6f63be2672f46beb57544e69110c492.setContent(html_fe3636fd67fe4fa2a687c65fe61637ac);
+        
+
+        marker_41558615b37a4beaaa7ee21ea3624e44.bindPopup(popup_e6f63be2672f46beb57544e69110c492)
+        ;
+
+        
+    
+    
+            var marker_19772fe0958d4de2af44afeb0fe55fc6 = L.marker(
+                [36.1253178, -115.1960722],
+                {}
+            ).addTo(map_55db6656a03b476a87e5ba0a41444a1b);
+        
+    
+        var popup_343085b6a28f482d857a890766f2292c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db4b0e444ff34c7fb6f9ff32d638202c = $(`<div id="html_db4b0e444ff34c7fb6f9ff32d638202c" style="width: 100.0%; height: 100.0%;">('888 Korean BBQ', ['Barbeque', 'Restaurants', 'Korean'], ['Fusion / Buffet', 'Continental', 'Dinner'], 4.441860465116279)</div>`)[0];
+            popup_343085b6a28f482d857a890766f2292c.setContent(html_db4b0e444ff34c7fb6f9ff32d638202c);
+        
+
+        marker_19772fe0958d4de2af44afeb0fe55fc6.bindPopup(popup_343085b6a28f482d857a890766f2292c)
+        ;
+
+        
+    
+    
+            var marker_a509993564074691b51882d4b87d5a9e = L.marker(
+                [36.044636, -115.242593],
+                {}
+            ).addTo(map_55db6656a03b476a87e5ba0a41444a1b);
+        
+    
+        var popup_6c739acb171444afab9e9243eb73a478 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff501bcf03b0488596878efd922753bf = $(`<div id="html_ff501bcf03b0488596878efd922753bf" style="width: 100.0%; height: 100.0%;">('Doh Korean BBQ', ['Restaurants', 'Barbeque', 'Korean'], ['Fusion / Buffet', 'Continental', 'Snack / Tacos'], 4.056603773584905)</div>`)[0];
+            popup_6c739acb171444afab9e9243eb73a478.setContent(html_ff501bcf03b0488596878efd922753bf);
+        
+
+        marker_a509993564074691b51882d4b87d5a9e.bindPopup(popup_6c739acb171444afab9e9243eb73a478)
+        ;
+
+        
+    
+    
+            var marker_a0ed97b245e0484c9435c753736567e5 = L.marker(
+                [36.1150660797, -115.2031197524],
+                {}
+            ).addTo(map_55db6656a03b476a87e5ba0a41444a1b);
+        
+    
+        var popup_894965b686a444f98f2d7c3c997cc583 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0b82a5bac424794a1f73ceab911a5d4 = $(`<div id="html_f0b82a5bac424794a1f73ceab911a5d4" style="width: 100.0%; height: 100.0%;">('Da Lat', ['Vietnamese', 'Restaurants'], ['Fusion / Buffet', 'Continental', 'Exotic'], 3.8851063829787233)</div>`)[0];
+            popup_894965b686a444f98f2d7c3c997cc583.setContent(html_f0b82a5bac424794a1f73ceab911a5d4);
+        
+
+        marker_a0ed97b245e0484c9435c753736567e5.bindPopup(popup_894965b686a444f98f2d7c3c997cc583)
+        ;
+
+        
+    
+    
+            var marker_65d7fc4f6fcb4adab95c4410d9d3390c = L.marker(
+                [36.0289933, -115.1171379],
+                {}
+            ).addTo(map_55db6656a03b476a87e5ba0a41444a1b);
+        
+    
+        var popup_f35100c458ec4bddbdb5d3a6322982e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aef76dd221f04a299eca89954011f629 = $(`<div id="html_aef76dd221f04a299eca89954011f629" style="width: 100.0%; height: 100.0%;">('Lemongrass Café', ['Restaurants', 'Vietnamese'], ['Fusion / Buffet', 'Continental', 'Exotic'], 3.736501079913607)</div>`)[0];
+            popup_f35100c458ec4bddbdb5d3a6322982e1.setContent(html_aef76dd221f04a299eca89954011f629);
+        
+
+        marker_65d7fc4f6fcb4adab95c4410d9d3390c.bindPopup(popup_f35100c458ec4bddbdb5d3a6322982e1)
+        ;
+
+        
+    
+    
+            var marker_c78b5964334e4b809690599859f7083a = L.marker(
+                [36.1266899, -115.201296],
+                {}
+            ).addTo(map_55db6656a03b476a87e5ba0a41444a1b);
+        
+    
+        var popup_134ec8437a2b49db8bdb90f871a52cc3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f856cd5310645b79be98d1f0290a122 = $(`<div id="html_1f856cd5310645b79be98d1f0290a122" style="width: 100.0%; height: 100.0%;">('Sura BBQ Buffet', ['Buffets', 'Barbeque', 'Restaurants', 'Korean'], ['Fusion / Buffet', 'Continental', 'Exotic'], 3.720689655172414)</div>`)[0];
+            popup_134ec8437a2b49db8bdb90f871a52cc3.setContent(html_1f856cd5310645b79be98d1f0290a122);
+        
+
+        marker_c78b5964334e4b809690599859f7083a.bindPopup(popup_134ec8437a2b49db8bdb90f871a52cc3)
+        ;
+
+        
+    
+    
+            var marker_2ec60e619f4f45acab088598f5b4eaf5 = L.marker(
+                [36.0150169665, -115.1171830467],
+                {}
+            ).addTo(map_55db6656a03b476a87e5ba0a41444a1b);
+        
+    
+        var popup_94a0990d80a24ea280381f87ca75a088 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0e54c7baabc4e049432158a635f9187 = $(`<div id="html_b0e54c7baabc4e049432158a635f9187" style="width: 100.0%; height: 100.0%;">('Honey Pig Korean BBQ', ['Restaurants', 'Korean', 'Barbeque'], ['Fusion / Buffet', 'Continental', 'Snack / Tacos'], 3.6538461538461537)</div>`)[0];
+            popup_94a0990d80a24ea280381f87ca75a088.setContent(html_b0e54c7baabc4e049432158a635f9187);
+        
+
+        marker_2ec60e619f4f45acab088598f5b4eaf5.bindPopup(popup_94a0990d80a24ea280381f87ca75a088)
+        ;
+
+        
+    
+    
+            var marker_94b38dd4deeb450a9513612330d4277a = L.marker(
+                [36.0553309, -115.2413886],
+                {}
+            ).addTo(map_55db6656a03b476a87e5ba0a41444a1b);
+        
+    
+        var popup_ad9826a7c92c47d09d990b46b1eb0a19 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b8ed17a637624bbfacca41be7e0e2b48 = $(`<div id="html_b8ed17a637624bbfacca41be7e0e2b48" style="width: 100.0%; height: 100.0%;">('PHO 0 TEN', ['Vietnamese', 'Restaurants'], ['Fusion / Buffet', 'Continental', 'Exotic'], 3.6296296296296298)</div>`)[0];
+            popup_ad9826a7c92c47d09d990b46b1eb0a19.setContent(html_b8ed17a637624bbfacca41be7e0e2b48);
+        
+
+        marker_94b38dd4deeb450a9513612330d4277a.bindPopup(popup_ad9826a7c92c47d09d990b46b1eb0a19)
+        ;
+
+        
+    
+    
+            var marker_cfb6e78a3bce487da54c9081f2e3568b = L.marker(
+                [36.111237, -115.06423],
+                {}
+            ).addTo(map_55db6656a03b476a87e5ba0a41444a1b);
+        
+    
+        var popup_46170ab46c9441b59c7f9d372ce5f97e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d21086a11a75426a91003293c192bc4a = $(`<div id="html_d21086a11a75426a91003293c192bc4a" style="width: 100.0%; height: 100.0%;">('Pho T', ['Vietnamese', 'Restaurants'], ['Fusion / Buffet', 'Continental', 'Exotic'], 3.6214285714285714)</div>`)[0];
+            popup_46170ab46c9441b59c7f9d372ce5f97e.setContent(html_d21086a11a75426a91003293c192bc4a);
+        
+
+        marker_cfb6e78a3bce487da54c9081f2e3568b.bindPopup(popup_46170ab46c9441b59c7f9d372ce5f97e)
+        ;
+
+        
+    
+    
+            var marker_c305e76f203945dc972ee490ebc3e2b9 = L.marker(
+                [36.1261943318, -115.193445287],
+                {}
+            ).addTo(map_55db6656a03b476a87e5ba0a41444a1b);
+        
+    
+        var popup_292546313fce43488449b81994af3b81 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_885e438a48264d329746a04035d53225 = $(`<div id="html_885e438a48264d329746a04035d53225" style="width: 100.0%; height: 100.0%;">('Pho Kim Long', ['Korean', 'Vietnamese', 'Chinese', 'Restaurants'], ['Fusion / Buffet', 'Continental', 'Exotic'], 3.4749729924378827)</div>`)[0];
+            popup_292546313fce43488449b81994af3b81.setContent(html_885e438a48264d329746a04035d53225);
+        
+
+        marker_c305e76f203945dc972ee490ebc3e2b9.bindPopup(popup_292546313fce43488449b81994af3b81)
+        ;
+
+        
+    
+    
+            var marker_354d752183d94ce5bcd4c75d55db1b74 = L.marker(
+                [36.1233694, -115.2246242],
+                {}
+            ).addTo(map_55db6656a03b476a87e5ba0a41444a1b);
+        
+    
+        var popup_0fb76afce27a449eaa4a74580e516bd4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b99795557cfa4f53824f2a249e8861df = $(`<div id="html_b99795557cfa4f53824f2a249e8861df" style="width: 100.0%; height: 100.0%;">('Pho 87', ['Vietnamese', 'Restaurants'], ['Fusion / Buffet', 'Continental', 'Exotic'], 3.461267605633803)</div>`)[0];
+            popup_0fb76afce27a449eaa4a74580e516bd4.setContent(html_b99795557cfa4f53824f2a249e8861df);
+        
+
+        marker_354d752183d94ce5bcd4c75d55db1b74.bindPopup(popup_0fb76afce27a449eaa4a74580e516bd4)
+        ;
+
+        
+    
+    
+            var marker_2e7aa970299e4fa5a51b9dd26701b905 = L.marker(
+                [36.125416, -115.205263],
+                {}
+            ).addTo(map_55db6656a03b476a87e5ba0a41444a1b);
+        
+    
+        var popup_e5c2c9519e6b4a36bcdb625f2a65248b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4888f85025e4c61964e22be982b7a9d = $(`<div id="html_c4888f85025e4c61964e22be982b7a9d" style="width: 100.0%; height: 100.0%;">('Honey Pig', ['Korean', 'Barbeque', 'Restaurants'], ['Fusion / Buffet', 'Continental', 'Snack / Tacos'], 3.4360189573459716)</div>`)[0];
+            popup_e5c2c9519e6b4a36bcdb625f2a65248b.setContent(html_c4888f85025e4c61964e22be982b7a9d);
+        
+
+        marker_2e7aa970299e4fa5a51b9dd26701b905.bindPopup(popup_e5c2c9519e6b4a36bcdb625f2a65248b)
+        ;
+
+        
+    
+    
+            var marker_f4785308d60d4386aa279c1785eed889 = L.marker(
+                [36.1258775, -115.197855],
+                {}
+            ).addTo(map_55db6656a03b476a87e5ba0a41444a1b);
+        
+    
+        var popup_3d3b6c1abca64d9c9b2ea48b2983633d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_133214311fa4462b83f715f107f4b545 = $(`<div id="html_133214311fa4462b83f715f107f4b545" style="width: 100.0%; height: 100.0%;">('KG BBQ', ['Barbeque', 'Vietnamese', 'Asian Fusion', 'Korean', 'Restaurants'], ['Fusion / Buffet', 'Continental', 'Exotic'], 3.283582089552239)</div>`)[0];
+            popup_3d3b6c1abca64d9c9b2ea48b2983633d.setContent(html_133214311fa4462b83f715f107f4b545);
+        
+
+        marker_f4785308d60d4386aa279c1785eed889.bindPopup(popup_3d3b6c1abca64d9c9b2ea48b2983633d)
+        ;
+
+        
+    
+    
+            var marker_2d9a963afe664af19a76b50623abd848 = L.marker(
+                [36.1049965, -115.1717319],
+                {}
+            ).addTo(map_55db6656a03b476a87e5ba0a41444a1b);
+        
+    
+        var popup_69aa8ea54fbf4b6db1b00abccff39add = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76e12dd680274edf897f5107d27d584e = $(`<div id="html_76e12dd680274edf897f5107d27d584e" style="width: 100.0%; height: 100.0%;">('Ginseng Korean BBQ II', ['Korean', 'Restaurants', 'Barbeque', 'Buffets'], ['Fusion / Buffet', 'Continental', 'Exotic'], 3.116)</div>`)[0];
+            popup_69aa8ea54fbf4b6db1b00abccff39add.setContent(html_76e12dd680274edf897f5107d27d584e);
+        
+
+        marker_2d9a963afe664af19a76b50623abd848.bindPopup(popup_69aa8ea54fbf4b6db1b00abccff39add)
+        ;
+
+        
+    
+    
+            var marker_a7039db4181141d9815dbfa2b13f3a42 = L.marker(
+                [36.1253178, -115.1960722],
+                {}
+            ).addTo(map_55db6656a03b476a87e5ba0a41444a1b);
+        
+    
+        var popup_34e4c321f41b425398ba2f2875452a5e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa8bea49116f4bb5904901a09c699c44 = $(`<div id="html_aa8bea49116f4bb5904901a09c699c44" style="width: 100.0%; height: 100.0%;">('Pho Vietnam Restaurant', ['Restaurants', 'Vietnamese', 'Korean'], ['Fusion / Buffet', 'Continental', 'Exotic'], 3.00990099009901)</div>`)[0];
+            popup_34e4c321f41b425398ba2f2875452a5e.setContent(html_aa8bea49116f4bb5904901a09c699c44);
+        
+
+        marker_a7039db4181141d9815dbfa2b13f3a42.bindPopup(popup_34e4c321f41b425398ba2f2875452a5e)
+        ;
+
+        
+    
+    
+            var marker_f1cc34417a52447dae7bae59e7ed31f1 = L.marker(
+                [36.1256919851, -115.1899323966],
+                {}
+            ).addTo(map_55db6656a03b476a87e5ba0a41444a1b);
+        
+    
+        var popup_6c7a39af71f44d559d9ddc234c56f712 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_749ef52480984f92a7de17638be4a3c4 = $(`<div id="html_749ef52480984f92a7de17638be4a3c4" style="width: 100.0%; height: 100.0%;">('Pho Little Saigon', ['Restaurants', 'Vietnamese'], ['Fusion / Buffet', 'Continental', 'Exotic'], 2.5276967930029155)</div>`)[0];
+            popup_6c7a39af71f44d559d9ddc234c56f712.setContent(html_749ef52480984f92a7de17638be4a3c4);
+        
+
+        marker_f1cc34417a52447dae7bae59e7ed31f1.bindPopup(popup_6c7a39af71f44d559d9ddc234c56f712)
+        ;
+
+        
+    
+    
+            var feature_group_32fd3a1245e04e9fa7519b9ec868e96c = L.featureGroup(
+                {}
+            ).addTo(map_55db6656a03b476a87e5ba0a41444a1b);
+        
+    
+            var heat_map_00cdd4b1a9ef40158f26699e1effca08 = L.heatLayer(
+                [[36.0426337, -115.2245316], [36.1517421042, -115.1518118808], [36.1041615385, -115.1376310519], [36.1261962, -115.1917155], [36.117091, -115.138401], [36.1017406138, -115.1003590417], [36.1265556, -115.1892231], [36.1154417, -115.1338935], [36.1253178, -115.1960722], [36.044636, -115.242593], [36.1150660797, -115.2031197524], [36.0289933, -115.1171379], [36.1266899, -115.201296], [36.0150169665, -115.1171830467], [36.0553309, -115.2413886], [36.111237, -115.06423], [36.1261943318, -115.193445287], [36.1233694, -115.2246242], [36.125416, -115.205263], [36.1258775, -115.197855], [36.1049965, -115.1717319], [36.1253178, -115.1960722], [36.1256919851, -115.1899323966]],
+                {"blur": 15, "max": 1.0, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
+            ).addTo(feature_group_32fd3a1245e04e9fa7519b9ec868e96c);
+        
+</script>

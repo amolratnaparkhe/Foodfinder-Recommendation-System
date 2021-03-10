@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<br>
+<div class="container">
+
+
+
+<form >
+
+    <p>Please fill-out your preferences, additional amenities, your current zip code, and 
+      the proximity from your location!</p>
+  <!-- DROPDOWN SELECT -->
+
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <select class="form-control form-control-lg" required>
+            <option value="">Preference 1</option>
+            <option>Indian</option>
+            <option>Chinese</option>
+            <option>Korean</option>
+            <option>Japanese</option>
+            <option>Steak</option>
+          </select>
+          
+        </div> 
+      </div>
+
+    <!--  
+      <div class="col">
+        <div class="form-group">
+          <select class="custom-select" required>
+            <option value="">Preference 2</option>
+            <option>Indian</option>
+            <option>Chinese</option>
+            <option>Korean</option>
+            <option>Japanese</option>
+            <option>Steak</option>
+          </select>        
+        </div> 
+      </div>
+    -->  
+
+      <div class="col">
+        <div class="form-group">
+          <select class="form-control form-control-lg" required>
+            <option value="">Preference 2</option>
+            <option>Indian</option>
+            <option>Chinese</option>
+            <option>Korean</option>
+            <option>Japanese</option>
+            <option>Steak</option>
+          </select>
+          
+        </div>
+      </div>
+    </div>
+
+<!--
+'C',
+ '',
+ '',
+ '',
+ '',
+ '',
+ '',
+ 'Snack / Tacos'
+
+-->
+
+
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <select class="form-control form-control-lg" required>
+            <option value="">Miscellaneous</option>
+            <option>Continental</option>
+            <option>Special / Dinner</option>
+            <option>Exotic</option>
+            <option>Fastfood / American</option>
+            <option>Fusion / Buffet</option>
+            <option>Ambiance / Service</option>
+            <option>Hotel/ Bar/ Night life</option>
+            <option>Snack / Tacos</option>
+          </select>
+          
+        </div>
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Zip Code" required>
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Distance (in miles)" required>
+      </div>
+    </div>
+   
+  <button type="submit" class="btn btn-secondary">Submit</button>
+  <!--
+  <a class="btn btn-primary" href="#" role="button">Submit</a>
+  -->
+  
+</form>
+
+</div>
+
+<div class="container">  
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="map2.html"  ></iframe>
+    </div>
+</div>
+
+{% endblock %}
+<br>
+<br>
+{% block map %}
+<!--
+<div class='container'>
+    {% include "map.html" %}
+    </div>
+-->
+
+{% endblock %}
+
+

@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f69e7ad5abc245f3bd2a4ea7b65b6bf0 {
+                    position: relative;
+                    width: 1200.0px;
+                    height: 600.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f69e7ad5abc245f3bd2a4ea7b65b6bf0" ></div>
+        
+</body>
+<script>    
+    
+            var map_f69e7ad5abc245f3bd2a4ea7b65b6bf0 = L.map(
+                "map_f69e7ad5abc245f3bd2a4ea7b65b6bf0",
+                {
+                    center: [36.1699, -115.1398],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dccf6bb5b890446f887f9e6043272fbf = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+            var marker_70b4e5a9a0784926b6002f1241d562ff = L.marker(
+                [36.0862874, -115.2261344],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_5ee44b7ac3d9435c9282672666024fc6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_81a50ab401a24d108ad18560c823a36f = $(`<div id="html_81a50ab401a24d108ad18560c823a36f" style="width: 100.0%; height: 100.0%;">('Mr Mamas', ['Burgers', 'Breakfast & Brunch', 'Sandwiches', 'American (Traditional)', 'Restaurants'], ['Continental', 'Snack / Tacos', 'Good Ambiance / Service'], 4.592561638111158)</div>`)[0];
+            popup_5ee44b7ac3d9435c9282672666024fc6.setContent(html_81a50ab401a24d108ad18560c823a36f);
+        
+
+        marker_70b4e5a9a0784926b6002f1241d562ff.bindPopup(popup_5ee44b7ac3d9435c9282672666024fc6)
+        ;
+
+        
+    
+    
+            var marker_69c2e42803a041c9b6d42712ef3667db = L.marker(
+                [36.1308788, -115.1153332],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_d9575f9a751b492197980cad247b4be8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be4d4cd7d21d43ee9cb5fa5997cfb071 = $(`<div id="html_be4d4cd7d21d43ee9cb5fa5997cfb071" style="width: 100.0%; height: 100.0%;">('Eggscellent', ['Burgers', 'Restaurants', 'Breakfast & Brunch', 'American (Traditional)'], ['Continental', 'Snack / Tacos', 'Good Ambiance / Service'], 4.584362139917696)</div>`)[0];
+            popup_d9575f9a751b492197980cad247b4be8.setContent(html_be4d4cd7d21d43ee9cb5fa5997cfb071);
+        
+
+        marker_69c2e42803a041c9b6d42712ef3667db.bindPopup(popup_d9575f9a751b492197980cad247b4be8)
+        ;
+
+        
+    
+    
+            var marker_bf7e3bcf9fc4466084a46db95c8d6b27 = L.marker(
+                [36.1578391, -115.1532268],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_f4a95c7ec66347c19b82b157a5e22f8d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad6bfc832113442d8b48b27018e4ece4 = $(`<div id="html_ad6bfc832113442d8b48b27018e4ece4" style="width: 100.0%; height: 100.0%;">('Jammyland', ['American (Traditional)', 'Nightlife', 'Cocktail Bars', 'Bars', 'Restaurants', 'Burgers', 'Caribbean'], ['Continental', 'Dinner', 'Fastfood / American'], 4.496062992125984)</div>`)[0];
+            popup_f4a95c7ec66347c19b82b157a5e22f8d.setContent(html_ad6bfc832113442d8b48b27018e4ece4);
+        
+
+        marker_bf7e3bcf9fc4466084a46db95c8d6b27.bindPopup(popup_f4a95c7ec66347c19b82b157a5e22f8d)
+        ;
+
+        
+    
+    
+            var marker_d7b0cb22cb1d44469b76f9f068ac2a8b = L.marker(
+                [36.0723732, -115.1003922],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_ccc7e6819ba242b099f08def177b2d9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0617ee5943b64f74bc5fd27bab2d9fe0 = $(`<div id="html_0617ee5943b64f74bc5fd27bab2d9fe0" style="width: 100.0%; height: 100.0%;">('U.S Fried Chicken Halal', ['Chicken Wings', 'Restaurants', 'Burgers', 'Salad', 'Halal', 'Fast Food'], ['Fastfood / American', 'Continental', 'Good Ambiance / Service'], 4.465116279069767)</div>`)[0];
+            popup_ccc7e6819ba242b099f08def177b2d9d.setContent(html_0617ee5943b64f74bc5fd27bab2d9fe0);
+        
+
+        marker_d7b0cb22cb1d44469b76f9f068ac2a8b.bindPopup(popup_ccc7e6819ba242b099f08def177b2d9d)
+        ;
+
+        
+    
+    
+            var marker_79711c9c43ae4ec09fee79702c4df9be = L.marker(
+                [36.1678783157, -115.1406404749],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_bdd9ecc5c5ff4855b91c76c8921bd822 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b94ef6763d13453296153db2a3224012 = $(`<div id="html_b94ef6763d13453296153db2a3224012" style="width: 100.0%; height: 100.0%;">('Carson Kitchen', ['Bars', 'Restaurants', 'Food', 'Nightlife', 'Cocktail Bars', 'American (New)', 'Salad', 'Burgers', 'Tapas/Small Plates', 'Comfort Food', 'Seafood', 'Desserts', 'Gastropubs', 'Vegan'], ['Dinner', 'Fastfood / American', 'Continental'], 4.441460794844254)</div>`)[0];
+            popup_bdd9ecc5c5ff4855b91c76c8921bd822.setContent(html_b94ef6763d13453296153db2a3224012);
+        
+
+        marker_79711c9c43ae4ec09fee79702c4df9be.bindPopup(popup_bdd9ecc5c5ff4855b91c76c8921bd822)
+        ;
+
+        
+    
+    
+            var marker_96b4deaff2f04af6a6ce395986a3bd2d = L.marker(
+                [36.1440852, -115.2024865],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_757fe5c672424b53a9bbfc0e764364ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc72254f371b4e44a9e3834fc47867e6 = $(`<div id="html_fc72254f371b4e44a9e3834fc47867e6" style="width: 100.0%; height: 100.0%;">('Egg & I', ['American (Traditional)', 'Breakfast & Brunch', 'Pizza', 'Sandwiches', 'Restaurants', 'Burgers'], ['Continental', 'Snack / Tacos', 'Good Ambiance / Service'], 4.425060574593285)</div>`)[0];
+            popup_757fe5c672424b53a9bbfc0e764364ad.setContent(html_fc72254f371b4e44a9e3834fc47867e6);
+        
+
+        marker_96b4deaff2f04af6a6ce395986a3bd2d.bindPopup(popup_757fe5c672424b53a9bbfc0e764364ad)
+        ;
+
+        
+    
+    
+            var marker_e4867c423609411b8a8c771c235a885a = L.marker(
+                [36.1911681, -115.3041773],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_729c791c6261446d9e06fc2b04d258fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd44224ec31c4e89a5dd2c9d6fea6bab = $(`<div id="html_dd44224ec31c4e89a5dd2c9d6fea6bab" style="width: 100.0%; height: 100.0%;">('Egg Works', ['Restaurants', 'American (New)', 'Breakfast & Brunch', 'American (Traditional)', 'Burgers'], ['Continental', 'Snack / Tacos', 'Good Ambiance / Service'], 4.402550091074681)</div>`)[0];
+            popup_729c791c6261446d9e06fc2b04d258fd.setContent(html_dd44224ec31c4e89a5dd2c9d6fea6bab);
+        
+
+        marker_e4867c423609411b8a8c771c235a885a.bindPopup(popup_729c791c6261446d9e06fc2b04d258fd)
+        ;
+
+        
+    
+    
+            var marker_1fb807dda374421d836d830d0a728e98 = L.marker(
+                [36.1321875, -115.1770963],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_4a4b62bb2acb4a71b6a7f285e4d8600d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84ab86506a6f4aff91bca7a72c742508 = $(`<div id="html_84ab86506a6f4aff91bca7a72c742508" style="width: 100.0%; height: 100.0%;">('Rollin Smoke Barbeque', ['Caterers', 'Event Planning & Services', 'American (Traditional)', 'Food', 'Restaurants', 'Burgers', 'Barbeque', 'Soul Food', 'Street Vendors'], ['Fastfood / American', 'Continental', 'Fusion / Buffet'], 4.394096529716793)</div>`)[0];
+            popup_4a4b62bb2acb4a71b6a7f285e4d8600d.setContent(html_84ab86506a6f4aff91bca7a72c742508);
+        
+
+        marker_1fb807dda374421d836d830d0a728e98.bindPopup(popup_4a4b62bb2acb4a71b6a7f285e4d8600d)
+        ;
+
+        
+    
+    
+            var marker_502f0e73027b4b2a87829646cf69b439 = L.marker(
+                [36.0719180321, -115.1172133228],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_fea208231a644d9a9202be8b4fb1661b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a77307a528ac412cb49eb220b49ebfa8 = $(`<div id="html_a77307a528ac412cb49eb220b49ebfa8" style="width: 100.0%; height: 100.0%;">('Egg Works', ['Restaurants', 'Breakfast & Brunch', 'Brazilian', 'Burgers', 'American (Traditional)'], ['Continental', 'Snack / Tacos', 'Good Ambiance / Service'], 4.393556538218572)</div>`)[0];
+            popup_fea208231a644d9a9202be8b4fb1661b.setContent(html_a77307a528ac412cb49eb220b49ebfa8);
+        
+
+        marker_502f0e73027b4b2a87829646cf69b439.bindPopup(popup_fea208231a644d9a9202be8b4fb1661b)
+        ;
+
+        
+    
+    
+            var marker_555fd473e5374ddbaf9b44a54deafe86 = L.marker(
+                [36.1187226, -115.173435],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_e428a62583324e519c281d7de41e5819 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d88a114ffc1e4890a2dcf08a7f654343 = $(`<div id="html_d88a114ffc1e4890a2dcf08a7f654343" style="width: 100.0%; height: 100.0%;">('Smoked Burgers & BBQ', ['Barbeque', 'Restaurants', 'Burgers', 'Cocktail Bars', 'Nightlife', 'Bars'], ['Fastfood / American', 'Good Ambiance / Service', 'Snack / Tacos'], 4.385416666666667)</div>`)[0];
+            popup_e428a62583324e519c281d7de41e5819.setContent(html_d88a114ffc1e4890a2dcf08a7f654343);
+        
+
+        marker_555fd473e5374ddbaf9b44a54deafe86.bindPopup(popup_e428a62583324e519c281d7de41e5819)
+        ;
+
+        
+    
+    
+            var marker_cd702afd73e74fd3bbdb37736be49988 = L.marker(
+                [36.1670439, -115.0801061],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_eaa6f410027c4a8ab8026e60773f9234 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_380a4b110133448ea9159fd8c13af5fc = $(`<div id="html_380a4b110133448ea9159fd8c13af5fc" style="width: 100.0%; height: 100.0%;">('Fat Boy', ['Burgers', 'Restaurants', 'Pizza', 'Mexican'], ['Fastfood / American', 'Good Ambiance / Service', 'Snack / Tacos'], 4.35)</div>`)[0];
+            popup_eaa6f410027c4a8ab8026e60773f9234.setContent(html_380a4b110133448ea9159fd8c13af5fc);
+        
+
+        marker_cd702afd73e74fd3bbdb37736be49988.bindPopup(popup_eaa6f410027c4a8ab8026e60773f9234)
+        ;
+
+        
+    
+    
+            var marker_2507397ad4c14aae8383d120fde558eb = L.marker(
+                [36.1586242, -115.2047463712],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_8b87aa15d653425fa5d09d612e4d2def = L.popup({"maxWidth": "100%"});
+
+        
+            var html_037787b141714b3eb2371ce26b75532b = $(`<div id="html_037787b141714b3eb2371ce26b75532b" style="width: 100.0%; height: 100.0%;">("Freddy's Frozen Custard & Steakburgers", ['Burgers', 'Restaurants', 'Ice Cream & Frozen Yogurt', 'Fast Food', 'Food', 'Hot Dogs'], ['Fastfood / American', 'Exotic', 'Hotel/ Bar/ Night life'], 4.342105263157895)</div>`)[0];
+            popup_8b87aa15d653425fa5d09d612e4d2def.setContent(html_037787b141714b3eb2371ce26b75532b);
+        
+
+        marker_2507397ad4c14aae8383d120fde558eb.bindPopup(popup_8b87aa15d653425fa5d09d612e4d2def)
+        ;
+
+        
+    
+    
+            var marker_c1c7cc66c3a540f086d3122d4eee7a85 = L.marker(
+                [36.1517421042, -115.1518118808],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_fc52405c6c23450bb31a617d68fb14c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a0fa9ab59574c3dae2f6b6466e07602 = $(`<div id="html_0a0fa9ab59574c3dae2f6b6466e07602" style="width: 100.0%; height: 100.0%;">('Bajamar Seafood & Tacos', ['Fast Food', 'Dive Bars', 'Bars', 'Tacos', 'Seafood', 'Nightlife', 'Mexican', 'Restaurants'], ['Snack / Tacos', 'Dinner', 'Fusion / Buffet'], 4.7995049504950495)</div>`)[0];
+            popup_fc52405c6c23450bb31a617d68fb14c7.setContent(html_0a0fa9ab59574c3dae2f6b6466e07602);
+        
+
+        marker_c1c7cc66c3a540f086d3122d4eee7a85.bindPopup(popup_fc52405c6c23450bb31a617d68fb14c7)
+        ;
+
+        
+    
+    
+            var marker_e711b9d9f8f645d28244571f08c84ccd = L.marker(
+                [36.197418, -115.258664],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_5774f66cc01c420e9221049405222ed8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ebde01cb7194bb882e06c3729724cde = $(`<div id="html_5ebde01cb7194bb882e06c3729724cde" style="width: 100.0%; height: 100.0%;">('Garden Grill', ['Farmers Market', 'Restaurants', 'Mexican', 'Vegetarian', 'Vegan', 'Street Vendors', 'Food', 'Tacos'], ['Fastfood / American', 'Snack / Tacos', 'Good Ambiance / Service'], 4.728070175438597)</div>`)[0];
+            popup_5774f66cc01c420e9221049405222ed8.setContent(html_5ebde01cb7194bb882e06c3729724cde);
+        
+
+        marker_e711b9d9f8f645d28244571f08c84ccd.bindPopup(popup_5774f66cc01c420e9221049405222ed8)
+        ;
+
+        
+    
+    
+            var marker_8aa040322bfe4235a8888f7dc90f05e7 = L.marker(
+                [36.1725604183, -115.245821625],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_432212a3c7ab45028cc0fd271f5b5a5b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a46fe32b8a2a43398e68f5f0bd32c123 = $(`<div id="html_a46fe32b8a2a43398e68f5f0bd32c123" style="width: 100.0%; height: 100.0%;">("Serrano's Mexican Restaurant", ['Mexican', 'Restaurants', 'Local Flavor'], ['Snack / Tacos', 'Continental', 'Good Ambiance / Service'], 4.672839506172839)</div>`)[0];
+            popup_432212a3c7ab45028cc0fd271f5b5a5b.setContent(html_a46fe32b8a2a43398e68f5f0bd32c123);
+        
+
+        marker_8aa040322bfe4235a8888f7dc90f05e7.bindPopup(popup_432212a3c7ab45028cc0fd271f5b5a5b)
+        ;
+
+        
+    
+    
+            var marker_cf5dffda48e344f1a1c31859a509f5a7 = L.marker(
+                [36.2198750347, -115.2506966928],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_022cb1531f3341c2a3bc0b85cc448ce4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08522d90ff43430da7f698d100401d0d = $(`<div id="html_08522d90ff43430da7f698d100401d0d" style="width: 100.0%; height: 100.0%;">('La Cantine', ['Coffee & Tea', 'Mexican', 'Sandwiches', 'Fast Food', 'French', 'Bakeries', 'Vegan', 'Cafes', 'Restaurants', 'Food'], ['Good Ambiance / Service', 'Fastfood / American', 'Continental'], 4.666666666666667)</div>`)[0];
+            popup_022cb1531f3341c2a3bc0b85cc448ce4.setContent(html_08522d90ff43430da7f698d100401d0d);
+        
+
+        marker_cf5dffda48e344f1a1c31859a509f5a7.bindPopup(popup_022cb1531f3341c2a3bc0b85cc448ce4)
+        ;
+
+        
+    
+    
+            var marker_2120b59df1a14a858da83543a047a3c8 = L.marker(
+                [36.2390904166, -115.2329670237],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_2b35ef3a60a34f0abaf0a78abcc59796 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_993828fb4da94ea9b0d6ef5cbd7713d7 = $(`<div id="html_993828fb4da94ea9b0d6ef5cbd7713d7" style="width: 100.0%; height: 100.0%;">("Trillo's Street Tacos", ['Restaurants', 'Mexican'], ['Snack / Tacos', 'Continental', 'Good Ambiance / Service'], 4.609375)</div>`)[0];
+            popup_2b35ef3a60a34f0abaf0a78abcc59796.setContent(html_993828fb4da94ea9b0d6ef5cbd7713d7);
+        
+
+        marker_2120b59df1a14a858da83543a047a3c8.bindPopup(popup_2b35ef3a60a34f0abaf0a78abcc59796)
+        ;
+
+        
+    
+    
+            var marker_a763196b68b241faab8b08d55b56f14b = L.marker(
+                [36.159655901, -115.1363480271],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_ab4fe193a2a64f81b360ed9c75ed3ff6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3607a247f7f74822af58b29b604d3563 = $(`<div id="html_3607a247f7f74822af58b29b604d3563" style="width: 100.0%; height: 100.0%;">('Mariscos Playa Escondida', ['Restaurants', 'Ethnic Food', 'Mexican', 'Seafood', 'Food', 'Specialty Food'], ['Snack / Tacos', 'Continental', 'Fusion / Buffet'], 4.583098591549295)</div>`)[0];
+            popup_ab4fe193a2a64f81b360ed9c75ed3ff6.setContent(html_3607a247f7f74822af58b29b604d3563);
+        
+
+        marker_a763196b68b241faab8b08d55b56f14b.bindPopup(popup_ab4fe193a2a64f81b360ed9c75ed3ff6)
+        ;
+
+        
+    
+    
+            var marker_e970fe6c252c44cda17d22f625681639 = L.marker(
+                [36.0929646, -115.1995905],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_cb6ce71cefcd4d1f95493b9e1b4e58cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9994dcd547d40da82b65feed607f29c = $(`<div id="html_c9994dcd547d40da82b65feed607f29c" style="width: 100.0%; height: 100.0%;">('El Zarape Mexican Restaurant', ['Restaurants', 'Tacos', 'Breakfast & Brunch', 'Mexican'], ['Snack / Tacos', 'Continental', 'Good Ambiance / Service'], 4.574468085106383)</div>`)[0];
+            popup_cb6ce71cefcd4d1f95493b9e1b4e58cd.setContent(html_c9994dcd547d40da82b65feed607f29c);
+        
+
+        marker_e970fe6c252c44cda17d22f625681639.bindPopup(popup_cb6ce71cefcd4d1f95493b9e1b4e58cd)
+        ;
+
+        
+    
+    
+            var marker_cd333d71e098465bb8e7a78622d9dcd1 = L.marker(
+                [36.100509, -115.302689],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_bed4eb92684f407dba4f70265eecc7bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5697a61234a2487c87a530a0f53739b8 = $(`<div id="html_5697a61234a2487c87a530a0f53739b8" style="width: 100.0%; height: 100.0%;">("Juan's Flaming Fajitas & Cantina", ['Restaurants', 'Bars', 'Mexican', 'Nightlife'], ['Snack / Tacos', 'Continental', 'Dinner'], 4.565244279529994)</div>`)[0];
+            popup_bed4eb92684f407dba4f70265eecc7bc.setContent(html_5697a61234a2487c87a530a0f53739b8);
+        
+
+        marker_cd333d71e098465bb8e7a78622d9dcd1.bindPopup(popup_bed4eb92684f407dba4f70265eecc7bc)
+        ;
+
+        
+    
+    
+            var marker_c8ec62ee5df44136a371dbc45521cb6e = L.marker(
+                [36.233582833, -115.2508901523],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_5012b3aca6aa4a5295cb33802b9ee097 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d9aceb18ee34cdbb3a4b442747d58ad = $(`<div id="html_4d9aceb18ee34cdbb3a4b442747d58ad" style="width: 100.0%; height: 100.0%;">('Sin Fronteras Tacos', ['Mexican', 'Restaurants'], ['Snack / Tacos', 'Good Ambiance / Service', 'Continental'], 4.532663316582915)</div>`)[0];
+            popup_5012b3aca6aa4a5295cb33802b9ee097.setContent(html_4d9aceb18ee34cdbb3a4b442747d58ad);
+        
+
+        marker_c8ec62ee5df44136a371dbc45521cb6e.bindPopup(popup_5012b3aca6aa4a5295cb33802b9ee097)
+        ;
+
+        
+    
+    
+            var marker_b3bcebf1808a476692c4de0bb6fbe9e8 = L.marker(
+                [36.2635740682, -115.2512253561],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_ca23706e50704108a904c0af79fe51d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ddb54c800394455794ae41d7593819ca = $(`<div id="html_ddb54c800394455794ae41d7593819ca" style="width: 100.0%; height: 100.0%;">("Gerardo's Tacos", ['Mexican', 'Restaurants'], ['Snack / Tacos', 'Continental', 'Good Ambiance / Service'], 4.5256410256410255)</div>`)[0];
+            popup_ca23706e50704108a904c0af79fe51d5.setContent(html_ddb54c800394455794ae41d7593819ca);
+        
+
+        marker_b3bcebf1808a476692c4de0bb6fbe9e8.bindPopup(popup_ca23706e50704108a904c0af79fe51d5)
+        ;
+
+        
+    
+    
+            var marker_9efe61008bcd416e81a6be7495a55d11 = L.marker(
+                [36.0627365112, -115.2236785889],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_4fb584c7643b45fe9e3a4cbaf8b5046c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3ee9bc75a9e41a78a6e352b5eb7bdfa = $(`<div id="html_e3ee9bc75a9e41a78a6e352b5eb7bdfa" style="width: 100.0%; height: 100.0%;">('Soho Sushi Burrito', ['Restaurants', 'Sushi Bars', 'American (New)', 'Asian Fusion', 'Food', 'Poke', 'Mexican', 'Fast Food'], ['Exotic', 'Snack / Tacos', 'Continental'], 4.521951219512195)</div>`)[0];
+            popup_4fb584c7643b45fe9e3a4cbaf8b5046c.setContent(html_e3ee9bc75a9e41a78a6e352b5eb7bdfa);
+        
+
+        marker_9efe61008bcd416e81a6be7495a55d11.bindPopup(popup_4fb584c7643b45fe9e3a4cbaf8b5046c)
+        ;
+
+        
+    
+    
+            var marker_d8d7fd44034e4a0e956c2d3ad5cf2fe5 = L.marker(
+                [36.1756239, -115.1158412],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_ba6215f8cdc74e379b0457bbdb52f569 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e765432a301d4311bc7983040d7677ef = $(`<div id="html_e765432a301d4311bc7983040d7677ef" style="width: 100.0%; height: 100.0%;">('Carnitas y Tortas Ahogadas Guadalajara', ['Breakfast & Brunch', 'Restaurants', 'Sandwiches', 'Mexican'], ['Snack / Tacos', 'Continental', 'Good Ambiance / Service'], 4.521739130434782)</div>`)[0];
+            popup_ba6215f8cdc74e379b0457bbdb52f569.setContent(html_e765432a301d4311bc7983040d7677ef);
+        
+
+        marker_d8d7fd44034e4a0e956c2d3ad5cf2fe5.bindPopup(popup_ba6215f8cdc74e379b0457bbdb52f569)
+        ;
+
+        
+    
+    
+            var marker_cdcf3bd77067420aabfd23ffb5d8a7b8 = L.marker(
+                [36.1947007117, -115.2051705808],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_cc50f20abd5347b39b9d2a1769d97686 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ef72163122c4d53820247b99ebb87c2 = $(`<div id="html_8ef72163122c4d53820247b99ebb87c2" style="width: 100.0%; height: 100.0%;">('Mi Pueblo Taco Shop', ['Mexican', 'Restaurants'], ['Snack / Tacos', 'Continental', 'Good Ambiance / Service'], 4.487179487179487)</div>`)[0];
+            popup_cc50f20abd5347b39b9d2a1769d97686.setContent(html_8ef72163122c4d53820247b99ebb87c2);
+        
+
+        marker_cdcf3bd77067420aabfd23ffb5d8a7b8.bindPopup(popup_cc50f20abd5347b39b9d2a1769d97686)
+        ;
+
+        
+    
+    
+            var marker_2b720f21cf604f53903bd706a24f1289 = L.marker(
+                [36.1145367627, -115.172678268],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_1d30a6424f5d45fcb1248a87edd9c8fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_457d7b496a7442ce86fb9e47778b8bf0 = $(`<div id="html_457d7b496a7442ce86fb9e47778b8bf0" style="width: 100.0%; height: 100.0%;">('Lip Smacking Foodie Tours', ['Restaurants', 'Hotels', 'Walking Tours', 'Food', 'Event Planning & Services', 'Food Tours', 'Hotels & Travel', 'Tours'], ['Dinner', 'Hotel/ Bar/ Night life', 'Exotic'], 4.931034482758621)</div>`)[0];
+            popup_1d30a6424f5d45fcb1248a87edd9c8fa.setContent(html_457d7b496a7442ce86fb9e47778b8bf0);
+        
+
+        marker_2b720f21cf604f53903bd706a24f1289.bindPopup(popup_1d30a6424f5d45fcb1248a87edd9c8fa)
+        ;
+
+        
+    
+    
+            var marker_effd2c7756cf4a3985f14b52bc327caf = L.marker(
+                [36.056557, -115.278296],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_5b5b1d660eed4332bac5a1fae9b720cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc178e4a5dd04f9bbd3713467b2c4e8f = $(`<div id="html_bc178e4a5dd04f9bbd3713467b2c4e8f" style="width: 100.0%; height: 100.0%;">('Garlic Yuzu', ['Restaurants', 'Asian Fusion', 'Korean', 'Japanese'], ['Dinner', 'Fusion / Buffet', 'Exotic'], 4.859154929577465)</div>`)[0];
+            popup_5b5b1d660eed4332bac5a1fae9b720cd.setContent(html_bc178e4a5dd04f9bbd3713467b2c4e8f);
+        
+
+        marker_effd2c7756cf4a3985f14b52bc327caf.bindPopup(popup_5b5b1d660eed4332bac5a1fae9b720cd)
+        ;
+
+        
+    
+    
+            var marker_0880dca9d578424ba5b9d977662579d4 = L.marker(
+                [36.1041615385, -115.1376310519],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_f776a9ba07c74d718803fba1eede842d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60aeccad7a3a4ddeafe1975018450e28 = $(`<div id="html_60aeccad7a3a4ddeafe1975018450e28" style="width: 100.0%; height: 100.0%;">('Poke Heaven', ['Korean', 'Poke', 'Food', 'Asian Fusion', 'Japanese', 'Restaurants', 'Hawaiian'], ['Exotic', 'Continental', 'Fusion / Buffet'], 4.791666666666667)</div>`)[0];
+            popup_f776a9ba07c74d718803fba1eede842d.setContent(html_60aeccad7a3a4ddeafe1975018450e28);
+        
+
+        marker_0880dca9d578424ba5b9d977662579d4.bindPopup(popup_f776a9ba07c74d718803fba1eede842d)
+        ;
+
+        
+    
+    
+            var marker_520806e7eed24c70932cf8171ecb0cfb = L.marker(
+                [36.1261962, -115.1917155],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_8beecefd015a446fb99b0ae625d982fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c6aadc632914da18b1e4c35dbc793fe = $(`<div id="html_8c6aadc632914da18b1e4c35dbc793fe" style="width: 100.0%; height: 100.0%;">('J Karaoke Bar', ['Nightlife', 'Bars', 'Restaurants', 'Asian Fusion', 'Cocktail Bars', 'Karaoke', 'American (New)', 'Korean'], ['Hotel/ Bar/ Night life', 'Exotic', 'Continental'], 4.772241992882562)</div>`)[0];
+            popup_8beecefd015a446fb99b0ae625d982fd.setContent(html_8c6aadc632914da18b1e4c35dbc793fe);
+        
+
+        marker_520806e7eed24c70932cf8171ecb0cfb.bindPopup(popup_8beecefd015a446fb99b0ae625d982fd)
+        ;
+
+        
+    
+    
+            var marker_c93aab1bfdce4482a2b75b74696d60ea = L.marker(
+                [36.1237099, -115.2073495],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_6f75125774964703a05cd737d8d0cb28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e8601fc34c14caa96fa36bc0ce9cee8 = $(`<div id="html_0e8601fc34c14caa96fa36bc0ce9cee8" style="width: 100.0%; height: 100.0%;">('BTS Korean Buffet Restaurant', ['Soup', 'Restaurants', 'Buffets', 'Korean', 'Asian Fusion'], ['Fusion / Buffet', 'Continental', 'Exotic'], 4.767123287671233)</div>`)[0];
+            popup_6f75125774964703a05cd737d8d0cb28.setContent(html_0e8601fc34c14caa96fa36bc0ce9cee8);
+        
+
+        marker_c93aab1bfdce4482a2b75b74696d60ea.bindPopup(popup_6f75125774964703a05cd737d8d0cb28)
+        ;
+
+        
+    
+    
+            var marker_23aafe515ba14e6f87c6d965883d13f5 = L.marker(
+                [36.1599423, -115.2222337],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_efd1dcdbf5654dc59f5a30c896ed8c7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d01b7029fdd7472594fd3a1147e69ffd = $(`<div id="html_d01b7029fdd7472594fd3a1147e69ffd" style="width: 100.0%; height: 100.0%;">('Sushi Hiroyoshi Japanese Cuisine', ['Seafood', 'Restaurants', 'Sushi Bars', 'Japanese'], ['Exotic', 'Dinner', 'Fusion / Buffet'], 4.754237288135593)</div>`)[0];
+            popup_efd1dcdbf5654dc59f5a30c896ed8c7d.setContent(html_d01b7029fdd7472594fd3a1147e69ffd);
+        
+
+        marker_23aafe515ba14e6f87c6d965883d13f5.bindPopup(popup_efd1dcdbf5654dc59f5a30c896ed8c7d)
+        ;
+
+        
+    
+    
+            var marker_8ceda708042c479688823e15b31c1a93 = L.marker(
+                [36.1265556, -115.1892231],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_225d4787e33a4b7f83d89fce1f9cabb7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d4480b395cd4b69b8005c544eed4f0c = $(`<div id="html_0d4480b395cd4b69b8005c544eed4f0c" style="width: 100.0%; height: 100.0%;">('Kame Omakase and Kaiseki', ['Seafood', 'Japanese', 'Sushi Bars', 'Restaurants'], ['Dinner', 'Exotic', 'Fusion / Buffet'], 4.753846153846154)</div>`)[0];
+            popup_225d4787e33a4b7f83d89fce1f9cabb7.setContent(html_0d4480b395cd4b69b8005c544eed4f0c);
+        
+
+        marker_8ceda708042c479688823e15b31c1a93.bindPopup(popup_225d4787e33a4b7f83d89fce1f9cabb7)
+        ;
+
+        
+    
+    
+            var marker_109da860151f421fbb191918ba9b2b86 = L.marker(
+                [36.1248019, -115.1852569],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_824ce3f279524152bd218168892df696 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3fab218ed9de441986c5d08bce341352 = $(`<div id="html_3fab218ed9de441986c5d08bce341352" style="width: 100.0%; height: 100.0%;">('LV Pro Tint', ['Home Window Tinting', 'Home Services', 'Car Window Tinting', 'Auto Glass Services', 'Automotive', 'Restaurants', 'Windshield Installation & Repair', 'Vehicle Wraps', 'Wraps'], ['Hotel/ Bar/ Night life', 'Exotic', 'Good Ambiance / Service'], 4.75)</div>`)[0];
+            popup_824ce3f279524152bd218168892df696.setContent(html_3fab218ed9de441986c5d08bce341352);
+        
+
+        marker_109da860151f421fbb191918ba9b2b86.bindPopup(popup_824ce3f279524152bd218168892df696)
+        ;
+
+        
+    
+    
+            var marker_427640e9899047a2b2f97241af4c52e4 = L.marker(
+                [36.1266230217, -115.2099628274],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_407a672f07354f6f9c718f215238bef4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e147c63463c4a57a57746c250e60c6c = $(`<div id="html_4e147c63463c4a57a57746c250e60c6c" style="width: 100.0%; height: 100.0%;">('Kabuto', ['Food', 'Japanese', 'Sushi Bars', 'Restaurants'], ['Exotic', 'Dinner', 'Fusion / Buffet'], 4.72093023255814)</div>`)[0];
+            popup_407a672f07354f6f9c718f215238bef4.setContent(html_4e147c63463c4a57a57746c250e60c6c);
+        
+
+        marker_427640e9899047a2b2f97241af4c52e4.bindPopup(popup_407a672f07354f6f9c718f215238bef4)
+        ;
+
+        
+    
+    
+            var marker_49796856ee3d4a0b872898c053e8021f = L.marker(
+                [36.0869652, -115.1002996],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_ce64d2db4f694bb0ba2b00429f2b8a14 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f580e8236e24592b571b4fd7953f684 = $(`<div id="html_2f580e8236e24592b571b4fd7953f684" style="width: 100.0%; height: 100.0%;">('Hand Car Wash Sinclair', ['Car Wash', 'Gas Stations', 'Convenience Stores', 'Restaurants', 'Food', 'Delis', 'Automotive'], ['Hotel/ Bar/ Night life', 'Exotic', 'Good Ambiance / Service'], 4.72)</div>`)[0];
+            popup_ce64d2db4f694bb0ba2b00429f2b8a14.setContent(html_2f580e8236e24592b571b4fd7953f684);
+        
+
+        marker_49796856ee3d4a0b872898c053e8021f.bindPopup(popup_ce64d2db4f694bb0ba2b00429f2b8a14)
+        ;
+
+        
+    
+    
+            var marker_26b664e28b5e409c84cd67f7f480503d = L.marker(
+                [36.112777, -115.174006],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_31a8eb3fdafa4fc5a2d39a72a27951f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee22efa4b17b4b788dd54ad4db8ff56d = $(`<div id="html_ee22efa4b17b4b788dd54ad4db8ff56d" style="width: 100.0%; height: 100.0%;">('Fountains of Bellagio', ['Street Art', 'Landmarks & Historical Buildings', 'Local Flavor', 'Public Services & Government', 'Arts & Entertainment', 'Performing Arts', 'Restaurants'], ['Hotel/ Bar/ Night life', 'Dinner', 'Exotic'], 4.707296849087894)</div>`)[0];
+            popup_31a8eb3fdafa4fc5a2d39a72a27951f8.setContent(html_ee22efa4b17b4b788dd54ad4db8ff56d);
+        
+
+        marker_26b664e28b5e409c84cd67f7f480503d.bindPopup(popup_31a8eb3fdafa4fc5a2d39a72a27951f8)
+        ;
+
+        
+    
+    
+            var marker_2a483afe166049f7bbe633280dbb8f7b = L.marker(
+                [36.127461, -115.224157],
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+        var popup_a3c37108eaa64fd5a9c2412ee4547ccb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89d8445aa2294be0920eb0c845ea0941 = $(`<div id="html_89d8445aa2294be0920eb0c845ea0941" style="width: 100.0%; height: 100.0%;">('EDO Gastro Tapas & Wine', ['Restaurants', 'Spanish', 'Tapas/Small Plates'], ['Dinner', 'Fusion / Buffet', 'Exotic'], 4.70631970260223)</div>`)[0];
+            popup_a3c37108eaa64fd5a9c2412ee4547ccb.setContent(html_89d8445aa2294be0920eb0c845ea0941);
+        
+
+        marker_2a483afe166049f7bbe633280dbb8f7b.bindPopup(popup_a3c37108eaa64fd5a9c2412ee4547ccb)
+        ;
+
+        
+    
+    
+            var feature_group_fd999a6cbf804201a951d2d5f53e0346 = L.featureGroup(
+                {}
+            ).addTo(map_f69e7ad5abc245f3bd2a4ea7b65b6bf0);
+        
+    
+            var heat_map_314378ec41984eadbf02bb58e559b21d = L.heatLayer(
+                [[36.0862874, -115.2261344], [36.1308788, -115.1153332], [36.1578391, -115.1532268], [36.0723732, -115.1003922], [36.1678783157, -115.1406404749], [36.1440852, -115.2024865], [36.1911681, -115.3041773], [36.1321875, -115.1770963], [36.0719180321, -115.1172133228], [36.1187226, -115.173435], [36.1670439, -115.0801061], [36.1586242, -115.2047463712], [36.1517421042, -115.1518118808], [36.197418, -115.258664], [36.1725604183, -115.245821625], [36.2198750347, -115.2506966928], [36.2390904166, -115.2329670237], [36.159655901, -115.1363480271], [36.0929646, -115.1995905], [36.100509, -115.302689], [36.233582833, -115.2508901523], [36.2635740682, -115.2512253561], [36.0627365112, -115.2236785889], [36.1756239, -115.1158412], [36.1947007117, -115.2051705808], [36.1145367627, -115.172678268], [36.056557, -115.278296], [36.1041615385, -115.1376310519], [36.1261962, -115.1917155], [36.1237099, -115.2073495], [36.1599423, -115.2222337], [36.1265556, -115.1892231], [36.1248019, -115.1852569], [36.1266230217, -115.2099628274], [36.0869652, -115.1002996], [36.112777, -115.174006], [36.127461, -115.224157]],
+                {"blur": 15, "max": 1.0, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
+            ).addTo(feature_group_fd999a6cbf804201a951d2d5f53e0346);
+        
+</script>

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="container">
+        
+                <p class="text-left">Here are your recommendations.</p>
+            
+        
+            <a href="{{ url_for('personalized')}}" class="btn btn-secondary">Back</a>
+            <br>
+            
+
+
+    {% include "map_personalized.html" %}
+    
+<br>
+
+<hr class="my-4">
+
+</div>
+
+
+{% endblock %}

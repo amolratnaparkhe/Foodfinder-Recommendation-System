@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<br>
+<div class="container">
+
+<form >
+
+  <p>Please select your User ID, your current zip code and the proximity for your personalized 
+      recommendations!</p>
+
+<!-- DROPDOWN SELECT -->
+
+  <div class="row">
+      <div class="col">
+          <div class="form-group">
+            <select class="form-control form-control-lg" required>
+              <option value="">User ID</option>
+              <option>Ambiance</option>
+              <option>Dinner</option>
+              <option>Service</option>
+              <option>Nightlife</option>
+              <option>Luxury</option>
+            </select>
+            
+          </div>
+        </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Zip Code" required>
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Distance (in miles)" required>
+    </div>
+  </div>
+    
+  <button type="submit" class="btn btn-secondary">Submit</button>
+    
+  
+
+<!--
+<input class="btn btn-secondary" type="reset" value="Reset">
+
+-->  
+
+
+
+</form>
+</div>
+
+{% endblock %}
+<br>
+<br>
+{% block map %}
+
+<div class='container'>
+    {% include "map.html" %}
+    </div>
+
+
+{% endblock %}
+

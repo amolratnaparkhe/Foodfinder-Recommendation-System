@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<div class="container">
+    <h4> Having friends over or dining by yourself? </h4>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col text-center">
+          <a class="btn btn-secondary btn-lg btn-block" href="{{ url_for('group') }}" role="button">Group Recommendations</a>
+      </div>
+      <div class="col text-center">
+        <a class="btn btn-secondary btn-lg btn-block" href="{{ url_for('personalized') }}" role="button">Personalized Recommendations</a>
+      </div>
+    </div>
+    <br>
+    <hr class="my-4">
+    
+  </div>
+{% endblock %}
+
