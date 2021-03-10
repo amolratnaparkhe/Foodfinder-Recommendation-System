@@ -1,6 +1,8 @@
 # Capstone Project: Food-finder
 
 Hello, this is the repository for my Capstone project that I worked on as a fellow at [The Data Incubator](https://www.thedataincubator.com/).
+<br>
+You can check out the app here: [Food-finder](https://food-finder-vegas-app.herokuapp.com/)
 
 
 
