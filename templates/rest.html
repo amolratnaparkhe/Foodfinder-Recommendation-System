@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bc13390595c9423c8b6e6112f97e17b3 {
+                    position: relative;
+                    width: 1200.0px;
+                    height: 800.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_bc13390595c9423c8b6e6112f97e17b3" ></div>
+        
+</body>
+<script>    
+    
+            var map_bc13390595c9423c8b6e6112f97e17b3 = L.map(
+                "map_bc13390595c9423c8b6e6112f97e17b3",
+                {
+                    center: [41.4993, -81.6944],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c6791b484ffc4f6698488326173bbbd6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bc13390595c9423c8b6e6112f97e17b3);
+        
+    
+            var marker_b7a802877f5949d781ef7b129b53a4ab = L.marker(
+                [41.314242764, -81.5064394794],
+                {}
+            ).addTo(map_bc13390595c9423c8b6e6112f97e17b3);
+        
+    
+        var popup_1dd12c192efc4ea79212426faebf9c7e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f6800560ec8f4327b6aaf10b76bdb5a8 = $(`<div id="html_f6800560ec8f4327b6aaf10b76bdb5a8" style="width: 100.0%; height: 100.0%;">('Zuki Sushi House', ['Chinese', 'Sushi Bars', 'Restaurants', 'Japanese'])</div>`)[0];
+            popup_1dd12c192efc4ea79212426faebf9c7e.setContent(html_f6800560ec8f4327b6aaf10b76bdb5a8);
+        
+
+        marker_b7a802877f5949d781ef7b129b53a4ab.bindPopup(popup_1dd12c192efc4ea79212426faebf9c7e)
+        ;
+
+        
+    
+    
+            var marker_7078ab3bb092465297a6045f35afefb1 = L.marker(
+                [41.477919, -81.6825795],
+                {}
+            ).addTo(map_bc13390595c9423c8b6e6112f97e17b3);
+        
+    
+        var popup_6bada5cd31774bf3a3359efe01b9a209 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8690cf00acf240b883e43170a06837b4 = $(`<div id="html_8690cf00acf240b883e43170a06837b4" style="width: 100.0%; height: 100.0%;">('Tandul', ['Nightlife', 'Indian', 'Buffets', 'Restaurants', 'Bars'])</div>`)[0];
+            popup_6bada5cd31774bf3a3359efe01b9a209.setContent(html_8690cf00acf240b883e43170a06837b4);
+        
+
+        marker_7078ab3bb092465297a6045f35afefb1.bindPopup(popup_6bada5cd31774bf3a3359efe01b9a209)
+        ;
+
+        
+    
+    
+            var marker_ec07970631d14ae39b0a7ab0bbc40b84 = L.marker(
+                [41.5014032288, -81.6758362894],
+                {}
+            ).addTo(map_bc13390595c9423c8b6e6112f97e17b3);
+        
+    
+        var popup_d1c8d08959034518bbbae04c96e8c09b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3f15d13e56848e4a692493002829776 = $(`<div id="html_d3f15d13e56848e4a692493002829776" style="width: 100.0%; height: 100.0%;">('Bombaychaat', ['Halal', 'Fast Food', 'Ethnic Food', 'Indian', 'Food', 'Restaurants', 'Specialty Food'])</div>`)[0];
+            popup_d1c8d08959034518bbbae04c96e8c09b.setContent(html_d3f15d13e56848e4a692493002829776);
+        
+
+        marker_ec07970631d14ae39b0a7ab0bbc40b84.bindPopup(popup_d1c8d08959034518bbbae04c96e8c09b)
+        ;
+
+        
+    
+    
+            var marker_dfbb996e12b441109d57a50002a96d9b = L.marker(
+                [41.11169, -81.5037159],
+                {}
+            ).addTo(map_bc13390595c9423c8b6e6112f97e17b3);
+        
+    
+        var popup_db59cccfa1b54d29b65c88221c984e2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57b5919159a849699ab27bcadd89aaba = $(`<div id="html_57b5919159a849699ab27bcadd89aaba" style="width: 100.0%; height: 100.0%;">('Nepali Kitchen', ['Indian', 'Restaurants', 'Himalayan/Nepalese'])</div>`)[0];
+            popup_db59cccfa1b54d29b65c88221c984e2d.setContent(html_57b5919159a849699ab27bcadd89aaba);
+        
+
+        marker_dfbb996e12b441109d57a50002a96d9b.bindPopup(popup_db59cccfa1b54d29b65c88221c984e2d)
+        ;
+
+        
+    
+    
+            var marker_efc684b8e6ce4a6eb3425ffb84f8d76e = L.marker(
+                [41.5396569, -81.4377129],
+                {}
+            ).addTo(map_bc13390595c9423c8b6e6112f97e17b3);
+        
+    
+        var popup_95cb6639842f403bbbdcdd1c0fd6d12d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_adb164ae5e954cfc9547c20dffadfb87 = $(`<div id="html_adb164ae5e954cfc9547c20dffadfb87" style="width: 100.0%; height: 100.0%;">('Paradise Biryani Pointe', ['Restaurants', 'Indian'])</div>`)[0];
+            popup_95cb6639842f403bbbdcdd1c0fd6d12d.setContent(html_adb164ae5e954cfc9547c20dffadfb87);
+        
+
+        marker_efc684b8e6ce4a6eb3425ffb84f8d76e.bindPopup(popup_95cb6639842f403bbbdcdd1c0fd6d12d)
+        ;
+
+        
+    
+    
+            var marker_0aacab2f208740c19d86d01dfa726b1b = L.marker(
+                [41.5212033, -81.3372341],
+                {}
+            ).addTo(map_bc13390595c9423c8b6e6112f97e17b3);
+        
+    
+        var popup_102456708ada44af90937516e2b9a368 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f80c108df4a64fd08486d14a1a664372 = $(`<div id="html_f80c108df4a64fd08486d14a1a664372" style="width: 100.0%; height: 100.0%;">('Pari Indian Cuisine', ['Restaurants', 'Indian'])</div>`)[0];
+            popup_102456708ada44af90937516e2b9a368.setContent(html_f80c108df4a64fd08486d14a1a664372);
+        
+
+        marker_0aacab2f208740c19d86d01dfa726b1b.bindPopup(popup_102456708ada44af90937516e2b9a368)
+        ;
+
+        
+    
+    
+            var marker_4585979993d547c2933bf8591f137ed1 = L.marker(
+                [41.238594, -81.449626],
+                {}
+            ).addTo(map_bc13390595c9423c8b6e6112f97e17b3);
+        
+    
+        var popup_8e3e62eef2f1401b8fdf811248e9b6f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d346832620634333b27b8d7383f0c4b4 = $(`<div id="html_d346832620634333b27b8d7383f0c4b4" style="width: 100.0%; height: 100.0%;">('Jaipur Junction', ['Indian', 'Restaurants'])</div>`)[0];
+            popup_8e3e62eef2f1401b8fdf811248e9b6f1.setContent(html_d346832620634333b27b8d7383f0c4b4);
+        
+
+        marker_4585979993d547c2933bf8591f137ed1.bindPopup(popup_8e3e62eef2f1401b8fdf811248e9b6f1)
+        ;
+
+        
+    
+    
+            var marker_9cb5e76ca2914e3abf1b0bf969d04ca5 = L.marker(
+                [41.4058131, -81.7668848],
+                {}
+            ).addTo(map_bc13390595c9423c8b6e6112f97e17b3);
+        
+    
+        var popup_8ddfe1d3808c4ea5853baa7ea56d915e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_56ee94c5f64b44c49433a34ffdf1b729 = $(`<div id="html_56ee94c5f64b44c49433a34ffdf1b729" style="width: 100.0%; height: 100.0%;">('6 Flavors', ['Restaurants', 'Vegetarian', 'Caterers', 'Asian Fusion', 'Indian', 'Event Planning & Services', 'Buffets', 'Sports Bars', 'Bars', 'Nightlife'])</div>`)[0];
+            popup_8ddfe1d3808c4ea5853baa7ea56d915e.setContent(html_56ee94c5f64b44c49433a34ffdf1b729);
+        
+
+        marker_9cb5e76ca2914e3abf1b0bf969d04ca5.bindPopup(popup_8ddfe1d3808c4ea5853baa7ea56d915e)
+        ;
+
+        
+    
+    
+            var marker_d679559c29fd4042b47a3e2c0259e3d5 = L.marker(
+                [41.482634, -81.825452],
+                {}
+            ).addTo(map_bc13390595c9423c8b6e6112f97e17b3);
+        
+    
+        var popup_3809313bbfc44e5cb8bcba70e0b3c071 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c1e0f1a8d614e6e81469b8a7dd4acf6 = $(`<div id="html_7c1e0f1a8d614e6e81469b8a7dd4acf6" style="width: 100.0%; height: 100.0%;">('India Garden', ['Restaurants', 'Pakistani', 'Indian', 'Vegetarian', 'Vegan', 'Nightlife', 'Bars', 'Seafood'])</div>`)[0];
+            popup_3809313bbfc44e5cb8bcba70e0b3c071.setContent(html_7c1e0f1a8d614e6e81469b8a7dd4acf6);
+        
+
+        marker_d679559c29fd4042b47a3e2c0259e3d5.bindPopup(popup_3809313bbfc44e5cb8bcba70e0b3c071)
+        ;
+
+        
+    
+    
+            var marker_178391e8f07347aabb09b24bfcd702f9 = L.marker(
+                [41.3521591524, -81.3846842728],
+                {}
+            ).addTo(map_bc13390595c9423c8b6e6112f97e17b3);
+        
+    
+        var popup_4c8bc54d402f466a9594ae836f8608e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_789033e973c24e5faf8ee6a875ff3194 = $(`<div id="html_789033e973c24e5faf8ee6a875ff3194" style="width: 100.0%; height: 100.0%;">('Ruchi Taste Of India', ['Indian', 'Buffets', 'Restaurants'])</div>`)[0];
+            popup_4c8bc54d402f466a9594ae836f8608e3.setContent(html_789033e973c24e5faf8ee6a875ff3194);
+        
+
+        marker_178391e8f07347aabb09b24bfcd702f9.bindPopup(popup_4c8bc54d402f466a9594ae836f8608e3)
+        ;
+
+        
+    
+    
+            var marker_5720ef225fd640f2b487731b069eb8bd = L.marker(
+                [41.349638, -81.757455],
+                {}
+            ).addTo(map_bc13390595c9423c8b6e6112f97e17b3);
+        
+    
+        var popup_747d551991d24f15b9dcbda6cf435848 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cdc9e91fc00d4734af241906e8a18106 = $(`<div id="html_cdc9e91fc00d4734af241906e8a18106" style="width: 100.0%; height: 100.0%;">('The Jaipur Junction', ['Indian', 'Restaurants'])</div>`)[0];
+            popup_747d551991d24f15b9dcbda6cf435848.setContent(html_cdc9e91fc00d4734af241906e8a18106);
+        
+
+        marker_5720ef225fd640f2b487731b069eb8bd.bindPopup(popup_747d551991d24f15b9dcbda6cf435848)
+        ;
+
+        
+    
+    
+            var marker_2fee9eed7ba643129ad621e05a505e92 = L.marker(
+                [41.4632003, -81.4844269],
+                {}
+            ).addTo(map_bc13390595c9423c8b6e6112f97e17b3);
+        
+    
+        var popup_46c10d4b411643578c7b64f7389faed7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_902ca5cc5b2641818a2867cc4994defc = $(`<div id="html_902ca5cc5b2641818a2867cc4994defc" style="width: 100.0%; height: 100.0%;">('Taste of Kerala', ['Indian', 'Restaurants', 'Vegan'])</div>`)[0];
+            popup_46c10d4b411643578c7b64f7389faed7.setContent(html_902ca5cc5b2641818a2867cc4994defc);
+        
+
+        marker_2fee9eed7ba643129ad621e05a505e92.bindPopup(popup_46c10d4b411643578c7b64f7389faed7)
+        ;
+
+        
+    
+    
+            var marker_c5a36bb11fc444c9bd27107c81d0c98d = L.marker(
+                [41.5109853006, -81.6030496359],
+                {}
+            ).addTo(map_bc13390595c9423c8b6e6112f97e17b3);
+        
+    
+        var popup_21f517d36ff44ee49b830d7ec3b2b2ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5fe8109a5ce34154b6d35b8080f8084f = $(`<div id="html_5fe8109a5ce34154b6d35b8080f8084f" style="width: 100.0%; height: 100.0%;">('Phusion Cafe', ['Restaurants', 'Taiwanese', 'Chinese'])</div>`)[0];
+            popup_21f517d36ff44ee49b830d7ec3b2b2ae.setContent(html_5fe8109a5ce34154b6d35b8080f8084f);
+        
+
+        marker_c5a36bb11fc444c9bd27107c81d0c98d.bindPopup(popup_21f517d36ff44ee49b830d7ec3b2b2ae)
+        ;
+
+        
+    
+    
+            var marker_abf377b4cab2450f85325d17f46decea = L.marker(
+                [41.4042964, -81.7697802],
+                {}
+            ).addTo(map_bc13390595c9423c8b6e6112f97e17b3);
+        
+    
+        var popup_e29aec9be5954ee0871182821e23506f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6c30cb677d8473d972c14600c5ecb65 = $(`<div id="html_a6c30cb677d8473d972c14600c5ecb65" style="width: 100.0%; height: 100.0%;">('Taydo Vietnamese & Chinese Restaurant', ['Restaurants', 'Vietnamese', 'Chinese'])</div>`)[0];
+            popup_e29aec9be5954ee0871182821e23506f.setContent(html_a6c30cb677d8473d972c14600c5ecb65);
+        
+
+        marker_abf377b4cab2450f85325d17f46decea.bindPopup(popup_e29aec9be5954ee0871182821e23506f)
+        ;
+
+        
+    
+    
+            var marker_503c963a8dcd4d54b4cd82ccc221a9af = L.marker(
+                [41.238834, -81.82297],
+                {}
+            ).addTo(map_bc13390595c9423c8b6e6112f97e17b3);
+        
+    
+        var popup_252e0a0d11b2489abba6695bfa61fba9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_800738e773334b61ae9aace84c70234f = $(`<div id="html_800738e773334b61ae9aace84c70234f" style="width: 100.0%; height: 100.0%;">('Wild Fusion', ['Sushi Bars', 'Restaurants', 'Chinese'])</div>`)[0];
+            popup_252e0a0d11b2489abba6695bfa61fba9.setContent(html_800738e773334b61ae9aace84c70234f);
+        
+
+        marker_503c963a8dcd4d54b4cd82ccc221a9af.bindPopup(popup_252e0a0d11b2489abba6695bfa61fba9)
+        ;
+
+        
+    
+    
+            var marker_fe8fea0fc88e48fc8763fa747fa0fc7b = L.marker(
+                [41.3598122952, -81.6856487672],
+                {}
+            ).addTo(map_bc13390595c9423c8b6e6112f97e17b3);
+        
+    
+        var popup_c41025ff32f34b1ca48dbff1292ec8cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_74aa0bb2b3b04885a98ccdfe9bc0503a = $(`<div id="html_74aa0bb2b3b04885a98ccdfe9bc0503a" style="width: 100.0%; height: 100.0%;">('Blue Ginger Asian Bistro', ['Sushi Bars', 'Restaurants', 'Chinese', 'Asian Fusion', 'Japanese'])</div>`)[0];
+            popup_c41025ff32f34b1ca48dbff1292ec8cb.setContent(html_74aa0bb2b3b04885a98ccdfe9bc0503a);
+        
+
+        marker_fe8fea0fc88e48fc8763fa747fa0fc7b.bindPopup(popup_c41025ff32f34b1ca48dbff1292ec8cb)
+        ;
+
+        
+    
+    
+            var marker_22199d29028049f28e1cd34874239d93 = L.marker(
+                [41.2781816355, -81.7852382394],
+                {}
+            ).addTo(map_bc13390595c9423c8b6e6112f97e17b3);
+        
+    
+        var popup_e3127a1c59254658ae603933fea0c537 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35ddf7a2495349e7b850ad415f6749ad = $(`<div id="html_35ddf7a2495349e7b850ad415f6749ad" style="width: 100.0%; height: 100.0%;">('Asia Garden', ['Sushi Bars', 'Chinese', 'Thai', 'Japanese', 'Restaurants'])</div>`)[0];
+            popup_e3127a1c59254658ae603933fea0c537.setContent(html_35ddf7a2495349e7b850ad415f6749ad);
+        
+
+        marker_22199d29028049f28e1cd34874239d93.bindPopup(popup_e3127a1c59254658ae603933fea0c537)
+        ;
+
+        
+    
+    
+            var marker_e2922ae2518f4bf9b3b5ed57ebd11032 = L.marker(
+                [41.1535545, -81.3580092],
+                {}
+            ).addTo(map_bc13390595c9423c8b6e6112f97e17b3);
+        
+    
+        var popup_e113afa715874a9496d79f8a4b40b8f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2bbaf10dd3f144b09758c33f706d8aee = $(`<div id="html_2bbaf10dd3f144b09758c33f706d8aee" style="width: 100.0%; height: 100.0%;">('Pacific East Japanese And Maylaysian', ['Japanese', 'Asian Fusion', 'Chinese', 'Sushi Bars', 'Malaysian', 'Restaurants', 'Singaporean'])</div>`)[0];
+            popup_e113afa715874a9496d79f8a4b40b8f5.setContent(html_2bbaf10dd3f144b09758c33f706d8aee);
+        
+
+        marker_e2922ae2518f4bf9b3b5ed57ebd11032.bindPopup(popup_e113afa715874a9496d79f8a4b40b8f5)
+        ;
+
+        
+    
+    
+            var marker_19751d26f1c0451ca37d9fcd0a3fb8d8 = L.marker(
+                [41.3975557, -81.9949385],
+                {}
+            ).addTo(map_bc13390595c9423c8b6e6112f97e17b3);
+        
+    
+        var popup_2bbac4f019bf432dab5d1c67282cf5fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac97945210774e85933033e844710d6c = $(`<div id="html_ac97945210774e85933033e844710d6c" style="width: 100.0%; height: 100.0%;">('Little Hong Kong', ['Chinese', 'Cantonese', 'Szechuan', 'Restaurants'])</div>`)[0];
+            popup_2bbac4f019bf432dab5d1c67282cf5fb.setContent(html_ac97945210774e85933033e844710d6c);
+        
+
+        marker_19751d26f1c0451ca37d9fcd0a3fb8d8.bindPopup(popup_2bbac4f019bf432dab5d1c67282cf5fb)
+        ;
+
+        
+    
+    
+            var marker_3086af287065492a906b8054183d7556 = L.marker(
+                [41.426765, -81.3738366],
+                {}
+            ).addTo(map_bc13390595c9423c8b6e6112f97e17b3);
+        
+    
+        var popup_e8bbcc50a22540f99442aab9378c5820 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d8fa092a91e4f6d97832827e5439812 = $(`<div id="html_9d8fa092a91e4f6d97832827e5439812" style="width: 100.0%; height: 100.0%;">('Hunan by the Falls', ['Chinese', 'Restaurants', 'Thai'])</div>`)[0];
+            popup_e8bbcc50a22540f99442aab9378c5820.setContent(html_9d8fa092a91e4f6d97832827e5439812);
+        
+
+        marker_3086af287065492a906b8054183d7556.bindPopup(popup_e8bbcc50a22540f99442aab9378c5820)
+        ;
+
+        
+    
+</script>
