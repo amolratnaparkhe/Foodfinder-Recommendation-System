@@ -1,7 +1,7 @@
 branca==0.4.2
 certifi==2020.12.5
 chardet==4.0.0
-click @ file:///home/linux1/recipes/ci/click_1610990599742/work
+click==6.7
 Flask @ file:///home/ktietz/src/ci/flask_1611932660458/work
 Flask-WTF==0.14.3
 folium==0.12.1
