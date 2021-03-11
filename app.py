@@ -222,7 +222,7 @@ def group():
         else:
             store_rest.extend(pref_store[0][:30])
         store_rest.extend(get_restaurants_by_topic(restaurants,topic)[:15])
-        store_rest = list(set(store_rest))
+        #store_rest = list(set(store_rest))
         store_rest = [item for item in store_rest if distance(locations[zip_code],locations[item['Zip Code']]) < proximity]
         # tiles="cartodbpositron"
         vegas_coordinates = (36.1699, -115.1398)
@@ -264,7 +264,8 @@ def personalized():
         zip_code = form.zip_code.data
         proximity = float(form.distance.data)
         
-        store_rest = list(set(get_restaurants_by_usr_id(restaurants,user_id)))
+        #store_rest = list(set(get_restaurants_by_usr_id(restaurants,user_id)))
+        store_rest = get_restaurants_by_usr_id(restaurants,user_id)
         store_rest = [item for item in store_rest if distance(locations[zip_code],locations[item['Zip Code']]) < proximity]
         # tiles="cartodbpositron"
         vegas_coordinates = (36.1699, -115.1398)
